@@ -1,0 +1,130 @@
+@use "./base/reset";
+@use "./base/fonts";
+@use "./abstract/variables" as *;
+@use "./abstract/mixins";
+@use "./layout/common";
+@use "./layout/header";
+@use "./layout/footer";
+
+.top-banner {
+  width: 100%;
+  &__link {
+    padding: 14px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $color-pink;
+    color: $color-white;
+  }
+  &__badge {
+    position: relative;
+    padding: 9px 20px 9px 40px;
+    background: $color-yellow;
+    border-radius: 40px;
+    text-align: center;
+  }
+  &__badge-text {
+    color: $color-pink;
+  }
+  &__text {
+    margin-left: 20px;
+    font-size: 28px;
+    font-family: "Jalnan", sans-serif;
+
+    .highlight {
+      position: relative;
+      color: $color-yellow;
+      z-index: 1;
+      &__line {
+        position: absolute;
+        bottom: -2px;
+        left: 0;
+        width: 100%;
+        z-index: -1;
+      }
+    }
+  }
+  &__arrow {
+    margin-left: 17px;
+  }
+}
+
+.bottom-banner {
+  position: fixed;
+  bottom: 24px;
+  width: 100%;
+  height: 78px;
+  .inner {
+    background: $color-brown;
+    border: 3px solid $color-brown-dark;
+    border-bottom: 0;
+  }
+}
+
+.quick-menu {
+  position: fixed;
+  top: 330px;
+  right: 91px;
+
+  &__character {
+    position: absolute;
+    top: -58px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: -1;
+  }
+  &__list {
+    padding: 22px;
+    text-align: center;
+    font-weight: 400;
+    background: #fff;
+    font-family: "Jalnan", sans-serif;
+
+    &:first-child {
+      border-top-left-radius: 20px;
+      border-top-right-radius: 20px;
+    }
+
+    &:last-child {
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+
+    a {
+      color: $color-brown;
+    }
+    .active {
+      background: $color-pink;
+      a {
+        color: $color-white;
+      }
+    }
+    &.top_btn {
+      padding: 10px 0;
+      background: $color-brown;
+      a {
+        color: $color-white;
+      }
+    }
+  }
+}
+
+main {
+  .hero-section {
+    width: 100%;
+    height: 922px;
+    background: url("../assets/images/hero-bg.jpg") no-repeat 0 / cover;
+
+    &__title {
+      position: relative;
+      top: 73px;
+      margin: 0 auto;
+      width: 726px;
+    }
+    &__banner {
+      position: absolute;
+      top: 466px;
+      left: 473px;
+    }
+  }
+}
