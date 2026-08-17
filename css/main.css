@@ -2,7 +2,6 @@
   font-family: "Jalnan";
   src: url("../assets/fonts/Jalnan2.woff2") format("woff2");
   font-weight: 400;
-  line-height: 120%;
   font-display: swap;
 }
 @font-face {
@@ -194,9 +193,15 @@ section {
 }
 
 body {
-  line-height: 1;
-  font-family: "Prentendard" sans-serif;
+  font-family: "Jalnan", sans-serif;
   font-weight: 400;
+  box-sizing: border-box;
+}
+
+button,
+input,
+a {
+  font-family: inherit;
 }
 
 ol,
@@ -238,7 +243,6 @@ table {
   font-family: "Jalnan";
   src: url("../assets/fonts/Jalnan2.woff2") format("woff2");
   font-weight: 400;
-  line-height: 120%;
   font-display: swap;
 }
 @font-face {
@@ -370,13 +374,20 @@ table {
   border-radius: 40px;
   text-align: center;
 }
+.top-banner__icon {
+  position: absolute;
+  top: -17px;
+  left: -25px;
+}
 .top-banner__badge-text {
+  font-size: 24px;
+  font-family: "Pretendard", sans-serif;
+  font-weight: 500;
   color: #ff8aab;
 }
 .top-banner__text {
   margin-left: 20px;
   font-size: 28px;
-  font-family: "Jalnan", sans-serif;
 }
 .top-banner__text .highlight {
   position: relative;
@@ -401,9 +412,36 @@ table {
   height: 78px;
 }
 .bottom-banner .inner {
+  padding: 15px 0 17px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
   background: #5a371e;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
   border: 3px solid #331d0a;
   border-bottom: 0;
+}
+.bottom-banner__text {
+  font-size: 32px;
+  color: #fff;
+}
+.bottom-banner__highlight {
+  color: #ff8aab;
+}
+.bottom-banner__btn {
+  position: relative;
+  margin-left: 50px;
+  padding: 8px 24px 8px 20px;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 24px;
+  background: #ff8aab;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 150px;
+  box-shadow: 0 4px 0 0 #fff;
 }
 
 .quick-menu {
@@ -419,11 +457,11 @@ table {
   z-index: -1;
 }
 .quick-menu__list {
+  position: relative;
   padding: 22px;
   text-align: center;
   font-weight: 400;
   background: #fff;
-  font-family: "Jalnan", sans-serif;
 }
 .quick-menu__list:first-child {
   border-top-left-radius: 20px;
@@ -432,6 +470,12 @@ table {
 .quick-menu__list:last-child {
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+}
+.quick-menu__list.icon a {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 5px;
 }
 .quick-menu__list a {
   color: #5a371e;
@@ -444,6 +488,9 @@ table {
 }
 .quick-menu__list.top_btn {
   padding: 10px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: #5a371e;
 }
 .quick-menu__list.top_btn a {
