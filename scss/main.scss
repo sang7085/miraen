@@ -193,6 +193,10 @@ main {
     background: url("../assets/images/image/hero-bg.jpg") no-repeat center /
       cover;
 
+    @media (max-width: 768px) {
+      aspect-ratio: 768 / 610;
+    }
+
     .inner {
       height: 100%;
     }
@@ -220,12 +224,11 @@ main {
 
     .flower {
       position: absolute;
-      right: 29.1%;
-      bottom: 50px;
-      width: 8.7vw;
-      top: percent-y(726, 922);
-      left: percent-x(1042, 1920);
-      width: per(168, 1920);
+      right: 35rem;
+      bottom: 5rem;
+      top: 72.6rem;
+      left: 104.2rem;
+      width: 16.8rem;
     }
   }
 

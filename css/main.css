@@ -218,6 +218,12 @@ body {
     font-size: 10px;
   }
 }
+@media (max-width: 768px) {
+  html,
+  body {
+    font-size: 0.8vw;
+  }
+}
 @font-face {
   font-family: "Jalnan";
   src: url("../assets/fonts/Jalnan2.woff2") format("woff2");
@@ -513,6 +519,11 @@ main .hero-section {
   aspect-ratio: 1920/922;
   background: url("../assets/images/image/hero-bg.jpg") no-repeat center/cover;
 }
+@media (max-width: 768px) {
+  main .hero-section {
+    aspect-ratio: 768/610;
+  }
+}
 main .hero-section .inner {
   height: 100%;
 }
@@ -537,12 +548,11 @@ main .hero-section .hero-paper {
 }
 main .hero-section .flower {
   position: absolute;
-  right: 29.1%;
-  bottom: 50px;
-  width: 8.7vw;
-  top: 78.7418655098%;
-  left: 54.2708333333%;
-  width: 8.75%;
+  right: 35rem;
+  bottom: 5rem;
+  top: 72.6rem;
+  left: 104.2rem;
+  width: 16.8rem;
 }
 main .form-section {
   padding: 11.4329268293% 0 4.8780487805% 0;
