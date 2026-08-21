@@ -1,4 +1,5 @@
 @use "../abstract/variables" as *;
+@use "../abstract/function" as *;
 
 .header {
   z-index: 999999;
@@ -11,6 +12,7 @@
     justify-content: space-between;
   }
   &__logo {
+    width: per(68);
   }
   &__actions {
     display: flex;
@@ -24,7 +26,18 @@
     font-weight: 800;
     border: 2px solid $color-black;
     border-radius: 100px;
+    white-space: nowrap;
   }
   &__miraen-logo {
+    width: per(96, 207);
+  }
+
+  @media screen and (max-width: 1240px) {
+  }
+  @media screen and (max-width: 790px) {
+    &__login {
+      font-size: 12px;
+      padding: 6px 12px;
+    }
   }
 }

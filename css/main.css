@@ -262,12 +262,6 @@ video {
   max-width: 1200px;
   width: 100%;
 }
-@media screen and (max-width: 1240px) {
-  .inner {
-    max-width: calc(100% - 80px);
-  }
-}
-
 .bullet-list-wrap.check .bullet-list {
   padding-left: 34px;
   display: flex;
@@ -301,6 +295,9 @@ video {
   display: flex;
   justify-content: space-between;
 }
+.header__logo {
+  width: 5.6666666667%;
+}
 .header__actions {
   display: flex;
   align-items: center;
@@ -313,7 +310,18 @@ video {
   font-weight: 800;
   border: 2px solid #000;
   border-radius: 100px;
+  white-space: nowrap;
 }
+.header__miraen-logo {
+  width: 46.3768115942%;
+}
+@media screen and (max-width: 790px) {
+  .header__login {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+}
+
 .footer {
   padding: 60px 0 80px;
   background: #848484;
@@ -340,15 +348,18 @@ video {
 }
 .top-banner .badge {
   position: relative;
-}
-.top-banner .badge .btn {
-  width: 11vw;
+  width: 11%;
   max-width: 132px;
 }
-.top-banner .icon {
+.top-banner .badge .btn {
+  width: 100%;
+}
+.top-banner .badge .icon {
   position: absolute;
-  top: -17px;
-  left: -25px;
+  top: -40.4761904762%;
+  left: -18.9393939394%;
+  width: 53.7878787879%;
+  max-width: 71px;
 }
 .top-banner .badge-text {
   font-size: 24px;
@@ -374,6 +385,8 @@ video {
 }
 .top-banner .arrow {
   margin-left: 17px;
+  width: 3.5833333333%;
+  max-width: 43px;
 }
 @media screen and (max-width: 1240px) {
   .top-banner .text {
@@ -506,27 +519,33 @@ video {
 }
 
 main .hero-section {
+  position: relative;
   width: 100%;
+  background: url("../assets/images/image/hero-bg.jpg") no-repeat center/cover;
+}
+main .hero-section .inner {
+  max-width: none;
   aspect-ratio: 1920/922;
-  background: url("../assets/images/image/hero-bg.jpg") no-repeat 0/cover;
 }
 main .hero-section__title {
-  position: relative;
-  top: 73px;
-  margin: 0 auto;
-  width: 60.5vw;
+  position: absolute;
+  top: 7.9175704989%;
+  left: 30.7291666667%;
+  width: 37.8125%;
 }
 main .hero-section__banner {
-  position: relative;
-  left: 9.2%;
-  width: 67.4166666667vw;
+  position: absolute;
+  top: 42.9501084599%;
+  left: 24.6354166667%;
+  width: 42.1354166667%;
 }
 main .hero-section__hero-paper {
   position: absolute;
   left: 50%;
-  bottom: -21.4%;
+  top: 89.6963123644%;
   transform: translateX(-50%);
-  width: 100%;
+  max-width: 100%;
+  width: 1200px;
 }
 main .hero-section__flower {
   position: absolute;
@@ -534,6 +553,9 @@ main .hero-section__flower {
   bottom: 50px;
   max-width: 168px;
   width: 8.7vw;
+  top: 78.7418655098%;
+  left: 54.2708333333%;
+  width: 8.75%;
 }
 main .form-section {
   padding: 300px 0 128px 0;
