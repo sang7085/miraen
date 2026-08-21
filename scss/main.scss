@@ -235,6 +235,7 @@ main {
     padding: 29.8rem 0 12.8rem 0;
     text-align: center;
     background-color: $color-green;
+
     .bubble {
       margin: 0 auto;
       width: 26.3rem;
@@ -247,6 +248,10 @@ main {
       margin: 1rem auto 0;
       width: 68.8rem;
     }
+    .paper {
+      margin: 0.3rem 0 0 1.2rem;
+      width: 103rem;
+    }
     .btn {
       margin: 5rem auto 0;
       width: 56.2rem;
@@ -254,12 +259,20 @@ main {
 
     // form
     .form {
+      position: relative;
       margin: 3rem auto 0;
       padding: 8rem 6rem;
       max-width: 120rem;
       text-align: left;
       background: $color-white;
       border: 0.15rem solid #333333;
+
+      .charactor {
+        position: absolute;
+        top: -17.8rem;
+        right: 2.1rem;
+        width: 31rem;
+      }
 
       .form-group {
         & + .form-group {
@@ -344,10 +357,10 @@ main {
           align-items: center;
           justify-content: center;
           font-weight: 400;
-          font-size: 1.6rem;
+          font-size: 2.4rem;
           color: #333;
           border: 0.1rem solid #666;
-          border-radius: 2rem;
+          border-radius: 99.9rem;
         }
       }
 
@@ -443,6 +456,7 @@ main {
   }
   // --------- form section end
 
+  // --------- promo section start
   .promo-section {
     padding: 77px 0 100px;
     text-align: center;
@@ -498,6 +512,7 @@ main {
       text-align: left;
     }
   }
+  // --------- promo section end
 
   .tab-section {
     padding: 100px 0 140px 0;

@@ -567,17 +567,28 @@ main .form-section .sub-title {
   margin: 1rem auto 0;
   width: 68.8rem;
 }
+main .form-section .paper {
+  margin: 0.3rem 0 0 1.2rem;
+  width: 103rem;
+}
 main .form-section .btn {
   margin: 5rem auto 0;
   width: 56.2rem;
 }
 main .form-section .form {
+  position: relative;
   margin: 3rem auto 0;
   padding: 8rem 6rem;
   max-width: 120rem;
   text-align: left;
   background: #fff;
   border: 0.15rem solid #333333;
+}
+main .form-section .form .charactor {
+  position: absolute;
+  top: -17.8rem;
+  right: 2.1rem;
+  width: 31rem;
 }
 main .form-section .form .form-group + .form-group {
   position: relative;
@@ -648,10 +659,10 @@ main .form-section .form .ability span {
   align-items: center;
   justify-content: center;
   font-weight: 400;
-  font-size: 1.6rem;
+  font-size: 2.4rem;
   color: #333;
   border: 0.1rem solid #666;
-  border-radius: 2rem;
+  border-radius: 99.9rem;
 }
 main .form-section .form .field-list {
   display: flex;
