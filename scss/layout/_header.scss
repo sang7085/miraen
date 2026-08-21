@@ -1,5 +1,4 @@
 @use "../abstract/variables" as *;
-@use "../abstract/function" as *;
 
 .header {
   z-index: 999999;
@@ -31,13 +30,4 @@
   .miraen-logo {
     width: 9.6rem;
   }
-
-  // @media screen and (max-width: 1240px) {
-  // }
-  // @media screen and (max-width: 790px) {
-  //   &__login {
-  //     font-size: 12px;
-  //     padding: 6px 12px;
-  //   }
-  // }
 }

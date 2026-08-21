@@ -29,7 +29,7 @@
           <strong class="highlight">
             누구나 무료!
             <img
-              class="highlight__line"
+              class="line"
               src="./assets/images/icon/top-banner-line.svg"
               alt=""
             />
@@ -42,6 +42,7 @@
       </a>
     </aside>
     <!-- top-banner end -->
+
     <!-- quickMenu start -->
     <aside class="quick-menu">
       <div class="character">
@@ -61,13 +62,13 @@
           </a>
         </li>
         <li class="quick-list icon">
-          <a href="#tab-section">
+          <a href="#lecture-info-section">
             <span>신청하기</span>
             <img src="./assets/images/icon/quick-icon02.svg" alt="" />
           </a>
         </li>
         <li class="quick-list top-btn">
-          <a href="#lecture-info-section">
+          <a href="#">
             <span>TOP</span>
             <img src="./assets/images/icon/quick-arrow.svg" alt="" />
           </a>
@@ -75,6 +76,7 @@
       </ul>
     </aside>
     <!-- quickMenu end -->
+
     <!-- header start -->
     <header class="header">
       <div class="inner">
@@ -90,6 +92,7 @@
       </div>
     </header>
     <!-- header end -->
+
     <!-- main start -->
     <main id="container">
       <!-- hero section start -->
@@ -127,13 +130,34 @@
             <img src="./assets/images/image/form-sub-title.png" alt="" />
           </div>
           <div class="paper">
-            <img src="./assets/images/image/form-paper.png" alt="" />
+            <img
+              class="motion1 motion-img"
+              src="./assets/images/image/form-newspaper.png"
+              alt=""
+            />
+            <img
+              class="motion2 motion-img"
+              src="./assets/images/image/form-motion-img1.png"
+              alt=""
+            />
+            <img
+              class="motion3 motion-img"
+              src="./assets/images/image/form-motion-img2.png"
+              alt=""
+            />
+            <img
+              class="motion4 motion-img"
+              src="./assets/images/image/form-motion-img3.png"
+              alt=""
+            />
           </div>
 
+          <!-- form start -->
           <form class="form">
             <div class="charactor">
               <img src="./assets/images/image/form-charactor.png" alt="" />
             </div>
+
             <div class="form-group">
               <div class="title-wrap">
                 <h3 class="title">
@@ -141,18 +165,15 @@
                   <span>(복수 선택 가능)</span>
                 </h3>
               </div>
-
               <div class="form-list ability-list">
                 <label class="ability">
                   <input type="checkbox" name="ability" value="html5" checked />
                   <span>HTML5</span>
                 </label>
-
                 <label class="ability">
                   <input type="checkbox" name="ability" value="css3" checked />
                   <span>CSS3</span>
                 </label>
-
                 <label class="ability">
                   <input
                     type="checkbox"
@@ -162,7 +183,6 @@
                   />
                   <span>JavaScript</span>
                 </label>
-
                 <label class="ability">
                   <input
                     type="checkbox"
@@ -172,22 +192,18 @@
                   />
                   <span>jQuery</span>
                 </label>
-
                 <label class="ability">
                   <input type="checkbox" name="ability" value="react" checked />
                   <span>React</span>
                 </label>
-
                 <label class="ability">
                   <input type="checkbox" name="ability" value="vue" />
                   <span>Vue</span>
                 </label>
-
                 <label class="ability">
                   <input type="checkbox" name="ability" value="figma" checked />
                   <span>Figma</span>
                 </label>
-
                 <label class="ability">
                   <input
                     type="checkbox"
@@ -206,23 +222,19 @@
                   가장 자신 있는 퍼블리싱 영역은 무엇인가요?
                 </h3>
               </div>
-
               <div class="form-list field-list">
                 <label class="field">
                   <input type="radio" name="area" value="responsive" />
                   <span>반응형 웹</span>
                 </label>
-
                 <label class="field">
                   <input type="radio" name="area" value="promotion" />
                   <span>프로모션/이벤트 페이지</span>
                 </label>
-
                 <label class="field">
                   <input type="radio" name="area" value="ui" checked />
                   <span>UI 컴포넌트/디자인 시스템</span>
                 </label>
-
                 <label class="field">
                   <input type="radio" name="area" value="animation" />
                   <span>CSS 애니메이션/인터랙션</span>
@@ -239,7 +251,6 @@
                   퍼블리싱한 웹사이트 주소를 작성해주세요.
                 </p>
               </div>
-
               <div class="form-list input-wrap">
                 <label for="portfolio" class="blind">포트폴리오 URL</label>
                 <input
@@ -263,44 +274,43 @@
                   주세요.
                 </p>
               </div>
-
               <div class="form-list textarea-wrap">
                 <label for="comment" class="blind">과제 내용</label>
-
                 <textarea
                   id="comment"
                   name="comment"
                   maxlength="2000"
                 ></textarea>
-
                 <span class="count">0/2,000</span>
               </div>
             </div>
           </form>
+          <!-- form end -->
 
           <button class="btn">
             <img src="./assets/images/image/form-btn.png" alt="" />
           </button>
         </div>
       </section>
-      <!-- form section start -->
+      <!-- form section end -->
 
-      <!-- <section id="promo-section" class="promo-section">
+      <!-- promo section start -->
+      <section id="promo-section" class="promo-section">
         <div class="inner">
-          <div class="promo-section__title">
+          <div class="title">
             <img src="./assets/images/image/promo-title.png" alt="" />
           </div>
-          <div class="promo-section__sub-title">
+          <div class="sub-title">
             <img src="./assets/images/image/promo-sub-title.png" alt="" />
           </div>
-          <div class="promo-section__content">
-            <div class="promo-section__paper">
-              <div class="promo-section__video">
+          <div class="content">
+            <div class="paper">
+              <div class="video">
                 <video
                   src="./assets/video/promo-video.mp4"
                   poster="./assets/images/image/video-thumbnail.jpg"
                 ></video>
-                <button class="promo-section__btn-play">
+                <button class="btn-play">
                   <img src="./assets/images/icon/btn-play.svg" alt="" />
                 </button>
               </div>
@@ -315,31 +325,33 @@
                   <img src="./assets/images/image/bullet-list3.png" alt="" />
                 </li>
               </ul>
-              <div class="promo-section__clip">
+              <div class="clip">
                 <img src="./assets/images/icon/clip.svg" alt="" />
               </div>
-              <div class="promo-section__charactor">
+              <div class="charactor">
                 <img src="./assets/images/image/paper-charactor.png" alt="" />
               </div>
             </div>
           </div>
         </div>
-      </section> -->
+      </section>
+      <!-- promo section end -->
 
-      <!-- <section id="tab-section" class="tab-section">
-        <div class="tab-section__logo">
+      <!-- tab section start -->
+      <section id="tab-section" class="tab-section">
+        <div class="logo">
           <img src="./assets/images/icon/choco-pop-logo.svg" alt="" />
         </div>
-        <div class="tab-section__title">
+        <div class="title">
           <img src="./assets/images/image/tab-title.png" alt="" />
         </div>
-        <div class="tab-section__content">
-          <div class="tab-section__tab-menu-rope">
+        <div class="content">
+          <div class="tab-menu-rope">
             <img src="./assets/images/image/tab-menu-rope.png" alt="" />
           </div>
-          <div class="tab-section__swiper-area">
+          <div class="swiper-area">
             <div class="inner">
-              <ul class="tab-section__tab-btn-wrap">
+              <ul class="tab-btn-wrap">
                 <li class="tab-item">
                   <button class="tab-btn"></button>
                 </li>
@@ -355,11 +367,11 @@
               </ul>
             </div>
 
-            <div class="tab-section__swiper-area">
+            <div class="swiper-area">
               <div class="inner">
-                <div class="swiper tab-section__panel-con">
+                <div class="swiper panel-con">
                   <div class="swiper-wrapper">
-                    slide1
+                    <!-- slide1 -->
                     <div class="swiper-slide">
                       <div class="top-area">
                         <h3 class="slide-title">
@@ -471,7 +483,7 @@
                       </div>
                     </div>
 
-                    slide2
+                    <!-- slide2 -->
                     <div class="swiper-slide">
                       <div class="top-area">
                         <h3 class="slide-title">
@@ -566,7 +578,7 @@
                       </div>
                     </div>
 
-                    slide3
+                    <!-- slide3 -->
                     <div class="swiper-slide">
                       <div class="top-area">
                         <h3 class="slide-title">
@@ -653,7 +665,7 @@
                       </div>
                     </div>
 
-                    slide4
+                    <!-- slide4 -->
                     <div class="swiper-slide">
                       <div class="top-area">
                         <h3 class="slide-title">
@@ -805,9 +817,11 @@
             </div>
           </div>
         </div>
-      </section> -->
+      </section>
+      <!-- tab section end -->
 
-      <!-- <section id="lecture-info-section" class="lecture-info-section">
+      <!-- lecture-info-section start -->
+      <section id="lecture-info-section" class="lecture-info-section">
         <div class="inner">
           <div class="tv-img">
             <img src="./assets/images/image/lecture-tv-img.png" alt="" />
@@ -821,11 +835,12 @@
           <div class="banner">
             <img src="./assets/images/image/lecture-banner.png" alt="" />
           </div>
-          <button class="lecture-btn">
+          <a href="https://www.miraenchoco.com/choco-time" class="btn">
             <img src="./assets/images/image/lecture-btn.png" alt="" />
-          </button>
+          </a>
         </div>
-      </section> -->
+      </section>
+      <!-- lecture-info-section end -->
     </main>
     <!-- main end -->
 
