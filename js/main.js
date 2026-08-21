@@ -16,8 +16,6 @@ const handleScroll = () => {
     }
   });
 
-  console.log("scrollY:", scrollY, "activeIndex:", activeIndex);
-
   quickMenus.forEach((menu) => {
     menu.classList.remove("active");
   });
@@ -57,6 +55,20 @@ const handleFormMotion = () => {
 
 window.addEventListener("scroll", handleFormMotion);
 // form-section 모션 end
+
+// textarea start
+const textarea = document.querySelector("#comment");
+const count = document.querySelector(".count");
+
+const updateCount = () => {
+  const currentLength = textarea.value.length;
+  count.textContent = `${currentLength.toLocaleString()}/2,000`;
+};
+
+textarea.addEventListener("input", updateCount);
+
+updateCount();
+// textarea end
 
 // promo-section 비디오 재생 start
 const video = document.querySelector(".video video");

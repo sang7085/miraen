@@ -17,7 +17,11 @@
     <aside class="top-banner">
       <a href="#" class="link">
         <div class="badge">
-          <img class="icon" src="./assets/images/icon/top-banner-siren.svg" />
+          <img
+            class="icon"
+            src="./assets/images/icon/top-banner-siren.svg"
+            alt=""
+          />
           <img
             class="btn"
             src="./assets/images/image/top-banner-btn.png"
@@ -68,10 +72,10 @@
           </a>
         </li>
         <li class="quick-list top-btn">
-          <a href="#">
+          <button type="button">
             <span>TOP</span>
             <img src="./assets/images/icon/quick-arrow.svg" alt="" />
-          </a>
+          </button>
         </li>
       </ul>
     </aside>
@@ -84,7 +88,7 @@
           <img src="./assets/images/icon/choco-logo.svg" alt="초코 로고" />
         </a>
         <div class="actions">
-          <button class="login">로그인</button>
+          <button type="button" class="login">로그인</button>
           <a href="/" class="miraen-logo">
             <img src="./assets/images/icon/miraen-logo.svg" alt="미래엔 로고" />
           </a>
@@ -98,17 +102,26 @@
       <!-- hero section start -->
       <section id="hero-section" class="hero-section">
         <div class="inner">
-          <div class="title">
+          <h2 class="title">
             <img
               src="./assets/images/image/hero-title.png"
-              alt="히어로 타이틀"
+              alt="6월 역사 이야기"
+            />
+          </h2>
+          <div class="banner">
+            <img
+              src="./assets/images/image/hero-banner.png"
+              alt="6/17(수) 단 하루! 6월을 이해하는 가장 쉬운 방법 바로 '초코타임'"
             />
           </div>
-          <div class="banner">
-            <img src="./assets/images/image/hero-banner.png" alt="" />
-          </div>
           <div class="hero-paper">
-            <img src="./assets/images/image/hero-paper.png" alt="" />
+            <img
+              src="./assets/images/image/hero-paper.png"
+              alt="수업 내용 아이의 생각을 바꾸는
+                    30분의 역사 경험, 참여 선물 초간단 댓글&후기 쓰고
+                    특별한 선물 받자, 참여 방법 한국사·입시 전문 쌤과
+                    ZOOM에서 실시간으로 만나요!, 신청자는 수업 10분 전부터 '나의 초코타임 수업 들어가기' 클릭 시, 참여 가능"
+            />
           </div>
           <div class="flower">
             <img src="./assets/images/image/hero-flower-front.png" alt="" />
@@ -121,14 +134,20 @@
       <section id="form-section" class="form-section">
         <div class="inner">
           <div class="bubble">
-            <img src="./assets/images/image/form-bubble.png" alt="" />
+            <img src="./assets/images/image/form-bubble.png" alt="6월 공휴일" />
           </div>
-          <div class="title">
-            <img src="./assets/images/image/form-title.png" alt="" />
-          </div>
-          <div class="sub-title">
-            <img src="./assets/images/image/form-sub-title.png" alt="" />
-          </div>
+          <h2 class="title">
+            <img
+              src="./assets/images/image/form-title.png"
+              alt="아이는 왜 쉬는 날인지 알 고 있을까요"
+            />
+          </h2>
+          <h3 class="sub-title">
+            <img
+              src="./assets/images/image/form-sub-title.png"
+              alt="현충일, 6·25... 이름은 익숙하지만 의미는 낯선 아이들"
+            />
+          </h3>
           <div class="paper">
             <img
               class="motion1 motion-img"
@@ -138,158 +157,183 @@
             <img
               class="motion2 motion-img"
               src="./assets/images/image/form-motion-img1.png"
-              alt=""
+              alt="3명 중 1명은 별다른 추모나 기념을 하지 않아..."
             />
             <img
               class="motion3 motion-img"
               src="./assets/images/image/form-motion-img2.png"
-              alt=""
+              alt="현충일이 뭐 하는 날인지는 모르고 그냥 노는 날이라 기뻐요"
             />
             <img
               class="motion4 motion-img"
               src="./assets/images/image/form-motion-img3.png"
-              alt=""
+              alt="호국영령? 그게 뭐예요?"
             />
           </div>
 
           <!-- form start -->
           <form class="form">
-            <div class="charactor">
-              <img src="./assets/images/image/form-charactor.png" alt="" />
-            </div>
-
-            <div class="form-group">
-              <div class="title-wrap">
-                <h3 class="title">
-                  주로 사용하는 퍼블리싱 기술/환경을 선택해 주세요.
-                  <span>(복수 선택 가능)</span>
-                </h3>
+            <div class="form-content">
+              <div class="charactor">
+                <img src="./assets/images/image/form-charactor.png" alt="" />
               </div>
-              <div class="form-list ability-list">
-                <label class="ability">
-                  <input type="checkbox" name="ability" value="html5" checked />
-                  <span>HTML5</span>
-                </label>
-                <label class="ability">
-                  <input type="checkbox" name="ability" value="css3" checked />
-                  <span>CSS3</span>
-                </label>
-                <label class="ability">
+
+              <div class="form-group">
+                <div class="title-wrap">
+                  <h4 class="title">
+                    주로 사용하는 퍼블리싱 기술/환경을 선택해 주세요.
+                    <span>(복수 선택 가능)</span>
+                  </h4>
+                </div>
+                <div class="form-list ability-list">
+                  <label class="ability">
+                    <input
+                      type="checkbox"
+                      name="ability"
+                      value="html5"
+                      checked
+                    />
+                    <span>HTML5</span>
+                  </label>
+                  <label class="ability">
+                    <input
+                      type="checkbox"
+                      name="ability"
+                      value="css3"
+                      checked
+                    />
+                    <span>CSS3</span>
+                  </label>
+                  <label class="ability">
+                    <input
+                      type="checkbox"
+                      name="ability"
+                      value="javascript"
+                      checked
+                    />
+                    <span>JavaScript</span>
+                  </label>
+                  <label class="ability">
+                    <input
+                      type="checkbox"
+                      name="ability"
+                      value="jquery"
+                      checked
+                    />
+                    <span>jQuery</span>
+                  </label>
+                  <label class="ability">
+                    <input
+                      type="checkbox"
+                      name="ability"
+                      value="react"
+                      checked
+                    />
+                    <span>React</span>
+                  </label>
+                  <label class="ability">
+                    <input type="checkbox" name="ability" value="vue" />
+                    <span>Vue</span>
+                  </label>
+                  <label class="ability">
+                    <input
+                      type="checkbox"
+                      name="ability"
+                      value="figma"
+                      checked
+                    />
+                    <span>Figma</span>
+                  </label>
+                  <label class="ability">
+                    <input
+                      type="checkbox"
+                      name="ability"
+                      value="photoshop"
+                      checked
+                    />
+                    <span>Photoshop</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="title-wrap">
+                  <h4 class="title">
+                    가장 자신 있는 퍼블리싱 영역은 무엇인가요?
+                  </h4>
+                </div>
+                <div class="form-list field-list">
+                  <label class="field">
+                    <input type="radio" name="area" value="responsive" />
+                    <span>반응형 웹</span>
+                  </label>
+                  <label class="field">
+                    <input type="radio" name="area" value="promotion" />
+                    <span>프로모션/이벤트 페이지</span>
+                  </label>
+                  <label class="field">
+                    <input type="radio" name="area" value="ui" checked />
+                    <span>UI 컴포넌트/디자인 시스템</span>
+                  </label>
+                  <label class="field">
+                    <input type="radio" name="area" value="animation" />
+                    <span>CSS 애니메이션/인터랙션</span>
+                  </label>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="title-wrap desc">
+                  <h4 class="title">
+                    포트폴리오 또는 대표 작업물 URL을 작성해 주세요.
+                  </h4>
+                  <p class="description">
+                    퍼블리싱한 웹사이트 주소를 작성해주세요.
+                  </p>
+                </div>
+                <div class="form-list input-wrap">
+                  <label for="portfolio" class="blind">포트폴리오 URL</label>
                   <input
-                    type="checkbox"
-                    name="ability"
-                    value="javascript"
-                    checked
+                    id="portfolio"
+                    type="url"
+                    name="portfolio"
+                    placeholder="Ex. 중학 국어 2-1(신유식)"
+                    value="https://hyun-three.vercel.app"
                   />
-                  <span>JavaScript</span>
-                </label>
-                <label class="ability">
-                  <input
-                    type="checkbox"
-                    name="ability"
-                    value="jquery"
-                    checked
-                  />
-                  <span>jQuery</span>
-                </label>
-                <label class="ability">
-                  <input type="checkbox" name="ability" value="react" checked />
-                  <span>React</span>
-                </label>
-                <label class="ability">
-                  <input type="checkbox" name="ability" value="vue" />
-                  <span>Vue</span>
-                </label>
-                <label class="ability">
-                  <input type="checkbox" name="ability" value="figma" checked />
-                  <span>Figma</span>
-                </label>
-                <label class="ability">
-                  <input
-                    type="checkbox"
-                    name="ability"
-                    value="photoshop"
-                    checked
-                  />
-                  <span>Photoshop</span>
-                </label>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="title-wrap">
+                  <h4 class="title">
+                    이번 퍼블리싱 과제를 진행하면서 가장 신경 쓴 부분이나
+                    어필하고 싶은 점을 적어주세요.
+                  </h4>
+                  <p class="description">
+                    마크업 구조, 반응형 처리 방식, CSS 구조화 등 자유롭게 작성해
+                    주세요.
+                  </p>
+                </div>
+                <div class="form-list textarea-wrap">
+                  <label for="comment" class="blind">과제 내용</label>
+                  <textarea id="comment" name="comment" maxlength="2000">
+이번 퍼블리싱 과제에서는 반응형 대응과 시멘틱 웹 구현에 가장 중점을 두었습니다.
+반응형 웹은 1920px 기준의 디자인을 다양한 화면 크기에서도 자연스럽게 표현할 수 있도록 구현했습니다. 고정된 픽셀 값에만 의존하지 않고 rem 단위를 활용하여 폰트와 주요 요소의 크기를 유연하게 조정했습니다.
+시멘틱 웹을 위해 header, main, footer, aside, section 등의 HTML 시맨틱 태그를 콘텐츠의 역할에 맞게 구분하여 사용했습니다. 또한 heading 태그를 콘텐츠의 계층에 맞게 구성하고, form 요소에서는 label과 input을 적절하게 연결하여 사용자가 콘텐츠 구조와 입력 요소를 쉽게 이해할 수 있도록 구성했습니다.
+CSS는 SCSS를 사용하여 공통 스타일과 등을 분리하고 반복되는 스타일을 효율적으로 관리할 수 있도록 구성했습니다. 특히 반응형 작업에서 반복적으로 사용되는 계산을 함수화하여 코드의 가독성과 유지보수성을 높였습니다.
+CSS의 깊이는 1단계는 position, 2단계는 padding, margin, display 등의 레이아웃 관련 속성, 3단계는 width, height 등의 크기 속성, 4단계는 font-size, line-height, text-align 등의 텍스트 관련 속성, 5단계는 color, background 등의 색상 및 시각적 속성 순으로 작성하여 스타일 선언의 깊이를 일관되게 유지했습니다.
+JavaScript는 별도의 라이브러리나 프레임워크에 의존하지 않고 Vanilla JavaScript를 사용했습니다. 탭 메뉴, Swiper 연동, 버튼 상태 변경 등 필요한 인터랙션을 직접 구현하여 불필요한 의존성을 줄이고 기본적인 DOM 조작과 이벤트 처리에 집중했습니다.</textarea
+                  >
+                  <span class="count">0/2,000</span>
+                </div>
               </div>
             </div>
 
-            <div class="form-group">
-              <div class="title-wrap">
-                <h3 class="title">
-                  가장 자신 있는 퍼블리싱 영역은 무엇인가요?
-                </h3>
-              </div>
-              <div class="form-list field-list">
-                <label class="field">
-                  <input type="radio" name="area" value="responsive" />
-                  <span>반응형 웹</span>
-                </label>
-                <label class="field">
-                  <input type="radio" name="area" value="promotion" />
-                  <span>프로모션/이벤트 페이지</span>
-                </label>
-                <label class="field">
-                  <input type="radio" name="area" value="ui" checked />
-                  <span>UI 컴포넌트/디자인 시스템</span>
-                </label>
-                <label class="field">
-                  <input type="radio" name="area" value="animation" />
-                  <span>CSS 애니메이션/인터랙션</span>
-                </label>
-              </div>
-            </div>
-
-            <div class="form-group">
-              <div class="title-wrap desc">
-                <h3 class="title">
-                  포트폴리오 또는 대표 작업물 URL을 작성해 주세요.
-                </h3>
-                <p class="description">
-                  퍼블리싱한 웹사이트 주소를 작성해주세요.
-                </p>
-              </div>
-              <div class="form-list input-wrap">
-                <label for="portfolio" class="blind">포트폴리오 URL</label>
-                <input
-                  id="portfolio"
-                  type="url"
-                  name="portfolio"
-                  placeholder="Ex. 중학 국어 2-1(신유식)"
-                  value="https://hyun-three.vercel.app"
-                />
-              </div>
-            </div>
-
-            <div class="form-group">
-              <div class="title-wrap">
-                <h3 class="title">
-                  이번 퍼블리싱 과제를 진행하면서 가장 신경 쓴 부분이나 어필하고
-                  싶은 점을 적어주세요.
-                </h3>
-                <p class="description">
-                  마크업 구조, 반응형 처리 방식, CSS 구조화 등 자유롭게 작성해
-                  주세요.
-                </p>
-              </div>
-              <div class="form-list textarea-wrap">
-                <label for="comment" class="blind">과제 내용</label>
-                <textarea
-                  id="comment"
-                  name="comment"
-                  maxlength="2000"
-                ></textarea>
-                <span class="count">0/2,000</span>
-              </div>
-            </div>
+            <button type="button" class="btn">
+              <img src="./assets/images/image/form-btn.png" alt="지원하기" />
+            </button>
           </form>
           <!-- form end -->
-
-          <button class="btn">
-            <img src="./assets/images/image/form-btn.png" alt="" />
-          </button>
         </div>
       </section>
       <!-- form section end -->
@@ -297,12 +341,18 @@
       <!-- promo section start -->
       <section id="promo-section" class="promo-section">
         <div class="inner">
-          <div class="title">
-            <img src="./assets/images/image/promo-title.png" alt="" />
-          </div>
-          <div class="sub-title">
-            <img src="./assets/images/image/promo-sub-title.png" alt="" />
-          </div>
+          <h2 class="title">
+            <img
+              src="./assets/images/image/promo-title.png"
+              alt="외우는 역사가 아니라 이해하는 역사로!"
+            />
+          </h2>
+          <h3 class="sub-title">
+            <img
+              src="./assets/images/image/promo-sub-title.png"
+              alt="한국사 전문가 연희쌤과 ZOOM으로 함께하는 초등 맞춤형 라이브 수업을 체험해 보세요!"
+            />
+          </h3>
           <div class="content">
             <div class="paper">
               <div class="video">
@@ -310,19 +360,31 @@
                   src="./assets/video/promo-video.mp4"
                   poster="./assets/images/image/video-thumbnail.jpg"
                 ></video>
-                <button class="btn-play">
-                  <img src="./assets/images/icon/btn-play.svg" alt="" />
+                <button type="button" class="btn-play">
+                  <img
+                    src="./assets/images/icon/btn-play.svg"
+                    alt="영상재생 버튼"
+                  />
                 </button>
               </div>
               <ul class="bullet-list-wrap check">
                 <li class="bullet-list">
-                  <img src="./assets/images/image/bullet-list1.png" alt="" />
+                  <img
+                    src="./assets/images/image/bullet-list1.png"
+                    alt="초등 사회 전문 선생님&친구들과 함께하는 '무료' LIVE 수업"
+                  />
                 </li>
                 <li class="bullet-list">
-                  <img src="./assets/images/image/bullet-list2.png" alt="" />
+                  <img
+                    src="./assets/images/image/bullet-list2.png"
+                    alt="외우지 않아도 이해되는, 아이 눈높이 역사 수업"
+                  />
                 </li>
                 <li class="bullet-list">
-                  <img src="./assets/images/image/bullet-list3.png" alt="" />
+                  <img
+                    src="./assets/images/image/bullet-list3.png"
+                    alt="6월의 의미를 배우고, 스스로 생각하는 힘이 자라는 시간"
+                  />
                 </li>
               </ul>
               <div class="clip">
@@ -340,29 +402,35 @@
       <!-- tab section start -->
       <section id="tab-section" class="tab-section">
         <div class="logo">
-          <img src="./assets/images/icon/choco-pop-logo.svg" alt="" />
+          <img
+            src="./assets/images/icon/choco-pop-logo.svg"
+            alt="초코팝 bi 로고"
+          />
         </div>
-        <div class="title">
-          <img src="./assets/images/image/tab-title.png" alt="" />
-        </div>
+        <h2 class="title">
+          <img
+            src="./assets/images/image/tab-title.png"
+            alt="여름방학 과목별 학습 한 눈에 보기"
+          />
+        </h2>
         <div class="content">
           <div class="tab-menu-rope">
             <img src="./assets/images/image/tab-menu-rope.png" alt="" />
           </div>
-          <div class="swiper-area">
+          <div class="tab-area">
             <div class="inner">
               <ul class="tab-btn-wrap">
                 <li class="tab-item">
-                  <button class="tab-btn"></button>
+                  <button type="button" class="tab-btn"></button>
                 </li>
                 <li class="tab-item">
-                  <button class="tab-btn"></button>
+                  <button type="button" class="tab-btn"></button>
                 </li>
                 <li class="tab-item">
-                  <button class="tab-btn"></button>
+                  <button type="button" class="tab-btn"></button>
                 </li>
                 <li class="tab-item">
-                  <button class="tab-btn"></button>
+                  <button type="button" class="tab-btn"></button>
                 </li>
               </ul>
             </div>
@@ -377,7 +445,7 @@
                         <h3 class="slide-title">
                           <img
                             src="./assets/images/image/slide-title-top1.png"
-                            alt=""
+                            alt="미리 보는 교과서 작품"
                           />
                         </h3>
                         <div class="card-list-wrap arrow">
@@ -385,19 +453,19 @@
                             <div class="card-thum">
                               <img
                                 src="./assets/images/image/card-top-img1-1.png"
-                                alt=""
+                                alt="교과서 작품 애니메이션 이미지"
                               />
                             </div>
                             <h4 class="card-title">
                               <img
                                 src="./assets/images/image/card-top-title1-1.png"
-                                alt=""
+                                alt="교과서 작품 애니메이션"
                               />
                             </h4>
                             <p class="card-text">
                               <img
                                 src="./assets/images/image/card-top-text1-1.png"
-                                alt=""
+                                alt="작품 애니메이션과 레몬 영상으로 2학기 교과서 수록 이야기를 감상해요."
                               />
                             </p>
                           </div>
@@ -405,19 +473,19 @@
                             <div class="card-thum">
                               <img
                                 src="./assets/images/image/card-top-img1-2.png"
-                                alt=""
+                                alt="확인 퀴즈 이미지"
                               />
                             </div>
                             <h4 class="card-title">
                               <img
                                 src="./assets/images/image/card-top-title1-2.png"
-                                alt=""
+                                alt="확인 퀴즈"
                               />
                             </h4>
                             <p class="card-text">
                               <img
                                 src="./assets/images/image/card-top-text1-2.png"
-                                alt=""
+                                alt="확인 퀴즈로 이야기의 줄거리와 주요 장면을 이해해요."
                               />
                             </p>
                           </div>
@@ -425,24 +493,24 @@
                             <div class="card-thum">
                               <img
                                 src="./assets/images/image/card-top-img1-3.png"
-                                alt=""
+                                alt="감상 카드 이미지"
                               />
                             </div>
                             <h4 class="card-title">
                               <img
                                 src="./assets/images/image/card-top-title1-3.png"
-                                alt=""
+                                alt="감상 카드"
                               />
                             </h4>
                             <p class="card-text">
                               <img
                                 src="./assets/images/image/card-top-text1-3.png"
-                                alt=""
+                                alt="작품별로 꼭 알아야 하는 내용을 감상카드로 정리해요."
                               />
                               <span class="important">
                                 <img
                                   src="./assets/images/image/card-top-text1-3-important.png"
-                                  alt=""
+                                  alt="감상카드는 1~4학년에 제공됩니다."
                                 />
                               </span>
                             </p>
@@ -453,7 +521,7 @@
                         <h3 class="slide-title">
                           <img
                             src="./assets/images/image/slide-title-bottom1.png"
-                            alt=""
+                            alt="미리 익히는 교과서 어휘"
                           />
                         </h3>
                         <div class="card-list-wrap shared-text">
@@ -461,7 +529,7 @@
                             <div class="card-thum">
                               <img
                                 src="./assets/images/image/card-bottom-img1-1.png"
-                                alt=""
+                                alt="교과서 어휘 이미지1"
                               />
                             </div>
                           </div>
@@ -469,14 +537,14 @@
                             <div class="card-thum">
                               <img
                                 src="./assets/images/image/card-bottom-img1-2.png"
-                                alt=""
+                                alt="교과서 어휘 이미지2"
                               />
                             </div>
                           </div>
                           <p class="card-text line-3">
                             <img
                               src="./assets/images/image/card-shared-text1.png"
-                              alt=""
+                              alt="단원별 핵심 어휘를 블록 게임으로 재미있게 익혀요. 낱말 뜻과 교과서 속 예시 문장을 읽고, 알맞은 낱말을 찾으며 어휘력과 문장 이해력을 함께 키워요."
                             />
                           </p>
                         </div>
@@ -489,7 +557,7 @@
                         <h3 class="slide-title">
                           <img
                             src="./assets/images/image/slide-title-top2.png"
-                            alt=""
+                            alt="[초 1~2] 별별 수학"
                           />
                         </h3>
                         <div class="card-list-wrap shared-text">
@@ -497,7 +565,7 @@
                             <div class="card-thum">
                               <img
                                 src="./assets/images/image/card-top-img2-1.png"
-                                alt=""
+                                alt="별별 수학 이미지1"
                               />
                             </div>
                           </div>
@@ -505,7 +573,7 @@
                             <div class="card-thum">
                               <img
                                 src="./assets/images/image/card-top-img2-2.png"
-                                alt=""
+                                alt="별별 수학 이미지2"
                               />
                             </div>
                           </div>
@@ -513,14 +581,14 @@
                             <div class="card-thum">
                               <img
                                 src="./assets/images/image/card-top-img2-3.png"
-                                alt=""
+                                alt="별별 수학 이미지3"
                               />
                             </div>
                           </div>
                           <p class="card-text">
                             <img
                               src="./assets/images/image/card-shared-text2.png"
-                              alt=""
+                              alt="게임과 애니메이션으로 연산 원리를 쉽고 재미있게 이해해요. 반복 연산 훈련으로 수 감각과 기초 계산력을 키워요."
                             />
                           </p>
                         </div>
@@ -530,7 +598,7 @@
                         <h3 class="slide-title">
                           <img
                             src="./assets/images/image/slide-title-bottom2.png"
-                            alt=""
+                            alt="[초 3~6] 문해길 수학 점프 업"
                           />
                         </h3>
                         <div class="card-list-wrap double">
@@ -538,19 +606,19 @@
                             <div class="card-thum">
                               <img
                                 src="./assets/images/image/card-bottom-img2-1.png"
-                                alt=""
+                                alt="이해하기 이미지"
                               />
                             </div>
                             <h4 class="card-title">
                               <img
                                 src="./assets/images/image/card-bottom-title2-1.png"
-                                alt=""
+                                alt="이해하기"
                               />
                             </h4>
                             <p class="card-text line-3">
                               <img
                                 src="./assets/images/image/card-bottom-text2-1.png"
-                                alt=""
+                                alt="문제에서 구하려는 것과 주어진 조건을 찾아내는 연습을 하며 수학적 사고력을 길러요."
                               />
                             </p>
                           </div>
@@ -558,19 +626,19 @@
                             <div class="card-thum">
                               <img
                                 src="./assets/images/image/card-bottom-img2-2.png"
-                                alt=""
+                                alt="확인하기/실력쌓기 이미지"
                               />
                             </div>
                             <h4 class="card-title">
                               <img
                                 src="./assets/images/image/card-bottom-title2-2.png"
-                                alt=""
+                                alt="확인하기/실력쌓기"
                               />
                             </h4>
                             <p class="card-text line-3">
                               <img
                                 src="./assets/images/image/card-bottom-text2-2.png"
-                                alt=""
+                                alt="단계별 풀이 과정에 따라 정확하게 문제를 해결하는 방법을 익혀요."
                               />
                             </p>
                           </div>
@@ -584,7 +652,7 @@
                         <h3 class="slide-title">
                           <img
                             src="./assets/images/image/slide-title-top3.png"
-                            alt=""
+                            alt="[초1~2] 독해로 보는 사회"
                           />
                         </h3>
                         <div class="card-list-wrap shared-text">
@@ -592,7 +660,7 @@
                             <div class="card-thum">
                               <img
                                 src="./assets/images/image/card-top-img3-1.png"
-                                alt=""
+                                alt="독해로 보는 사회 이미지1"
                               />
                             </div>
                           </div>
@@ -600,14 +668,14 @@
                             <div class="card-thum">
                               <img
                                 src="./assets/images/image/card-top-img3-2.png"
-                                alt=""
+                                alt="독해로 보는 사회 이미지1"
                               />
                             </div>
                           </div>
                           <p class="card-text line-3">
                             <img
                               src="./assets/images/image/card-shared-text3.png"
-                              alt=""
+                              alt="통합교과 주제와 연계된 글을 자료와 함께 읽으며 배경지식을 쑥쑥 확장해요. 1-2 하루, 약속, 상상, 이야기 / 2-2 계절, 인물, 물건, 기억"
                             />
                           </p>
                         </div>
@@ -617,7 +685,7 @@
                         <h3 class="slide-title">
                           <img
                             src="./assets/images/image/slide-title-bottom3.png"
-                            alt=""
+                            alt="[초3~6] 개념 스펀지 / 사회 용어 미리보기"
                           />
                         </h3>
                         <div class="card-list-wrap double">
@@ -625,19 +693,19 @@
                             <div class="card-thum">
                               <img
                                 src="./assets/images/image/card-bottom-img3-1.png"
-                                alt=""
+                                alt="개념 스펀지 이미지"
                               />
                             </div>
                             <h4 class="card-title">
                               <img
                                 src="./assets/images/image/card-bottom-title3-1.png"
-                                alt=""
+                                alt="개념 스펀지"
                               />
                             </h4>
                             <p class="card-text line-3">
                               <img
                                 src="./assets/images/image/card-bottom-text3-1.png"
-                                alt=""
+                                alt="'왜 그럴까?' 질문으로 시작해 2학기에 배울 사회 개념을 쉽고 재미있게 이해해요!"
                               />
                             </p>
                           </div>
@@ -645,19 +713,19 @@
                             <div class="card-thum">
                               <img
                                 src="./assets/images/image/card-bottom-img3-2.png"
-                                alt=""
+                                alt="사회 용어 미리보기 이미지"
                               />
                             </div>
                             <h4 class="card-title">
                               <img
                                 src="./assets/images/image/card-bottom-title3-2.png"
-                                alt=""
+                                alt="사회 용어 미리보기"
                               />
                             </h4>
                             <p class="card-text">
                               <img
                                 src="./assets/images/image/card-bottom-text3-2.png"
-                                alt=""
+                                alt="2학기 사회 교과서에 나오는 사회 용어를 미리 익혀요."
                               />
                             </p>
                           </div>
@@ -671,7 +739,7 @@
                         <h3 class="slide-title">
                           <img
                             src="./assets/images/image/slide-title-top4.png"
-                            alt=""
+                            alt="[초1] 오늘은 내가 실험왕 / [초2] 5분 탐구생활"
                           />
                         </h3>
                         <div class="card-list-wrap">
@@ -679,19 +747,19 @@
                             <div class="card-thum">
                               <img
                                 src="./assets/images/image/card-top-img4-1.png"
-                                alt=""
+                                alt="오늘은 내가 실험왕 이미지"
                               />
                             </div>
                             <h4 class="card-title">
                               <img
                                 src="./assets/images/image/card-top-title4-1.png"
-                                alt=""
+                                alt="오늘은 내가 실험왕"
                               />
                             </h4>
                             <p class="card-text">
                               <img
                                 src="./assets/images/image/card-top-text4-1.png"
-                                alt=""
+                                alt="일상생활에서 마주치는 과학적 호기심을 과학적 원리로 해결해요."
                               />
                             </p>
                           </div>
@@ -699,19 +767,19 @@
                             <div class="card-thum">
                               <img
                                 src="./assets/images/image/card-top-img4-2.png"
-                                alt=""
+                                alt="5분 탐구생활 이미지"
                               />
                             </div>
                             <h4 class="card-title">
                               <img
                                 src="./assets/images/image/card-top-title4-2.png"
-                                alt=""
+                                alt="5분 탐구생활"
                               />
                             </h4>
                             <p class="card-text">
                               <img
                                 src="./assets/images/image/card-top-text4-2.png"
-                                alt=""
+                                alt="대표 과학 탐구 주제로 과학의 궁금증을 해결해요."
                               />
                             </p>
                           </div>
@@ -722,7 +790,7 @@
                         <h3 class="slide-title">
                           <img
                             src="./assets/images/image/slide-title-bottom4.png"
-                            alt=""
+                            alt="[초 3~6] 개념 용어 PLAY! 과학 용어 미리 보기 / [초5~6] 3분 특강"
                           />
                         </h3>
                         <div class="card-list-wrap">
@@ -730,19 +798,19 @@
                             <div class="card-thum">
                               <img
                                 src="./assets/images/image/card-bottom-img4-1.png"
-                                alt=""
+                                alt="개념 용어 PLAY! 이미지"
                               />
                             </div>
                             <h4 class="card-title">
                               <img
                                 src="./assets/images/image/card-bottom-title4-1.png"
-                                alt=""
+                                alt="개념 용어 PLAY!"
                               />
                             </h4>
                             <p class="card-text line-3">
                               <img
                                 src="./assets/images/image/card-bottom-text4-1.png"
-                                alt=""
+                                alt="물리학·화학·생명과학·지구과학 핵심 용어를 영상 속 고구마머리와 쉽고 재미있게 배워요."
                               />
                             </p>
                           </div>
@@ -750,19 +818,19 @@
                             <div class="card-thum">
                               <img
                                 src="./assets/images/image/card-bottom-img4-2.png"
-                                alt=""
+                                alt="과학 용어 미리보기 이미지"
                               />
                             </div>
                             <h4 class="card-title">
                               <img
                                 src="./assets/images/image/card-bottom-title4-2.png"
-                                alt=""
+                                alt="과학 용어 미리보기"
                               />
                             </h4>
                             <p class="card-text">
                               <img
                                 src="./assets/images/image/card-bottom-text4-2.png"
-                                alt=""
+                                alt="2학기 과학 교과서에 나오는 과학 용어를 미리 익혀요."
                               />
                             </p>
                           </div>
@@ -770,19 +838,19 @@
                             <div class="card-thum">
                               <img
                                 src="./assets/images/image/card-bottom-img4-3.png"
-                                alt=""
+                                alt="3분 특강 이미지"
                               />
                             </div>
                             <h4 class="card-title">
                               <img
                                 src="./assets/images/image/card-bottom-title4-3.png"
-                                alt=""
+                                alt="3분 특강"
                               />
                             </h4>
                             <p class="card-text">
                               <img
                                 src="./assets/images/image/card-bottom-text4-3.png"
-                                alt=""
+                                alt="꼭 알아야 하는 과학 원리를 개념 키워드로 3분 안에 정리해요."
                               />
                             </p>
                           </div>
@@ -793,18 +861,30 @@
                 </div>
               </div>
               <div class="slide-title-wrap">
-                <div class="slide-banner-title">
-                  <img src="./assets/images/image/slide-banner1.png" alt="" />
-                </div>
-                <div class="slide-banner-title">
-                  <img src="./assets/images/image/slide-banner2.png" alt="" />
-                </div>
-                <div class="slide-banner-title">
-                  <img src="./assets/images/image/slide-banner3.png" alt="" />
-                </div>
-                <div class="slide-banner-title">
-                  <img src="./assets/images/image/slide-banner4.png" alt="" />
-                </div>
+                <h3 class="slide-banner-title">
+                  <img
+                    src="./assets/images/image/slide-banner1.png"
+                    alt="교과서 작품과 어휘를 통해 읽기 자신감을 키워요."
+                  />
+                </h3>
+                <h3 class="slide-banner-title">
+                  <img
+                    src="./assets/images/image/slide-banner2.png"
+                    alt="원리 이해를 통해 연산 실력부터 문제 해결력까지 완성해요!"
+                  />
+                </h3>
+                <h3 class="slide-banner-title">
+                  <img
+                    src="./assets/images/image/slide-banner3.png"
+                    alt="사회 현상과 개념, 용어를 연결하며 개념 이해력을 키워요!"
+                  />
+                </h3>
+                <h3 class="slide-banner-title">
+                  <img
+                    src="./assets/images/image/slide-banner4.png"
+                    alt="과학 용어와 원리를 이해하며 탐구력을 키워요."
+                  />
+                </h3>
               </div>
               <div class="swiper-arrow-wrap">
                 <button type="button" class="swiper-arrow prev">
@@ -824,19 +904,37 @@
       <section id="lecture-info-section" class="lecture-info-section">
         <div class="inner">
           <div class="tv-img">
-            <img src="./assets/images/image/lecture-tv-img.png" alt="" />
+            <img
+              src="./assets/images/image/lecture-tv-img.png"
+              alt="수강만족도 99%"
+            />
           </div>
-          <h4 class="sub-title">
-            <img src="./assets/images/image/lecture-sub-title.png" alt="" />
-          </h4>
-          <h3 class="title">
-            <img src="./assets/images/image/lecture-title.png" alt="" />
+          <h3 class="sub-title">
+            <img
+              src="./assets/images/image/lecture-sub-title.png"
+              alt="역사를 이해하는 딱 하루!"
+            />
           </h3>
+          <h2 class="title">
+            <img
+              src="./assets/images/image/lecture-title.png"
+              alt="초코타임 LIVE 수업으로 깊이 있게!"
+            />
+          </h2>
           <div class="banner">
-            <img src="./assets/images/image/lecture-banner.png" alt="" />
+            <img
+              src="./assets/images/image/lecture-banner.png"
+              alt="다음에도 이연희 선생님 강의는
+꼭 챙겨 듣겠습니다! 항상 좋아요♥, 선생님이 재미있게 수업을 해주시니
+시간 가는 줄 모르고 들었어요!, 역사 이야기가 귀에 콕콕 박혀
+10000년이 지나도 기억날 것 같은 강의!"
+            />
           </div>
           <a href="https://www.miraenchoco.com/choco-time" class="btn">
-            <img src="./assets/images/image/lecture-btn.png" alt="" />
+            <img
+              src="./assets/images/image/lecture-btn.png"
+              alt="선착순 6/17(수) 역사를 이해하는 시간! 지금 신청하기"
+            />
           </a>
         </div>
       </section>
@@ -847,10 +945,27 @@
     <footer class="footer">
       <div class="inner">
         <h3 class="title">
-          <img src="./assets/images/image/footer-title.png" alt="" />
+          <img
+            src="./assets/images/image/footer-title.png"
+            alt="꼭 읽어주세요!"
+          />
         </h3>
         <p class="text">
-          <img src="./assets/images/image/footer-text.png" alt="" />
+          <img
+            src="./assets/images/image/footer-text.png"
+            alt="수업 신청 및 참여
+              ZOOM으로 진행되는 라이브 수업이며, 회원가입만 해도 누구나 신청할 수 있습니다.
+              사전 신청자는 수업 30분 전 참여 안내 문자가 발송됩니다. (SMS 수신동의 필수) 또는 수업 10분 전부터 [초코타임 → 나의 초코타임 → 수업 들어가기] 메뉴에서 바로 참여할 수 있습니다.
+              
+              이벤트 유의사항
+              후기 작성은 여러 번 가능하나, 초코칩은 한 자녀당 1회만 제공됩니다.
+              (수업에 관계없이 중복 지급X, 최대 100개 제공)
+              SNS 후기는 6/21 이후 담당자 확인 시, 수업과 무관하거나 삭제·미공개 처리된 내용은 인정되지 않습니다.
+              SNS 후기 이벤트 참여 시 작성한 링크를 함께 기재해 주셔야 하며,
+              수업·후기 개수와 관계없이 기프티콘은 회원정보에 등록된 번호로 최초 1회만 지급됩니다.
+              기프티콘은 재고 상황에 따라 변경될 수 있으며, 유효기간 만료 후 연장 및 환불은 불가합니다.
+              작성된 후기는 추후 초코타임 수업 및 마케팅 홍보물에 활용될 수 있습니다."
+          />
         </p>
       </div>
     </footer>
@@ -858,13 +973,19 @@
     <aside class="bottom-banner">
       <div class="inner">
         <div class="badge">
-          <img src="./assets/images/image/bottom-banner-badge.png" alt="" />
+          <img
+            src="./assets/images/image/bottom-banner-badge.png"
+            alt="선착순"
+          />
         </div>
         <p class="text">
-          <img src="./assets/images/image/bottom-banner-text.png" alt="" />
+          <img
+            src="./assets/images/image/bottom-banner-text.png"
+            alt="마감 전, 빠르게 초코타임 신청하러 가자"
+          />
         </p>
-        <button class="btn">
-          <img src="./assets/images/image/bottom-banner-btn.png" alt="" />
+        <button type="button" class="btn">
+          <img src="./assets/images/image/bottom-banner-btn.png" alt="GO GO!" />
         </button>
       </div>
     </aside>

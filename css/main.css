@@ -343,6 +343,10 @@ body {
   background: #ff8aab;
   color: #fff;
 }
+.top-banner .link:focus {
+  outline: none;
+  border: 1px solid #000;
+}
 .top-banner .badge {
   position: relative;
   width: 13.2rem;
@@ -497,8 +501,10 @@ body {
   justify-content: center;
   background: #5a371e;
 }
-.quick-menu .quick-list.top-btn a {
+.quick-menu .quick-list.top-btn button {
   padding: 1rem 0;
+  font-family: "RixInooAriDuri";
+  font-weight: 400;
   color: #fff;
 }
 
@@ -525,7 +531,7 @@ main .hero-section .title {
 main .hero-section .banner {
   position: absolute;
   top: 39.6rem;
-  left: 11.3rem;
+  left: 11.1rem;
   width: 80.9rem;
 }
 main .hero-section .hero-paper {
@@ -537,8 +543,7 @@ main .hero-section .hero-paper {
 }
 main .hero-section .flower {
   position: absolute;
-  right: 35rem;
-  bottom: 5rem;
+  left: 68.2rem;
   top: 72.6rem;
   width: 16.8rem;
 }
@@ -561,7 +566,7 @@ main .form-section .sub-title {
 }
 main .form-section .paper {
   position: relative;
-  margin: 0.3rem 0 0 1.2rem;
+  margin: 0.3rem 0 0 5.3rem;
   width: 103rem;
   height: 56.2rem;
 }
@@ -606,9 +611,11 @@ main .form-section .btn {
 main .form-section .form {
   position: relative;
   margin: 3rem auto 0;
-  padding: 8rem 6rem;
   max-width: 120rem;
   text-align: left;
+}
+main .form-section .form .form-content {
+  padding: 8rem 6rem;
   background: #fff;
   border: 0.15rem solid #333333;
 }
@@ -681,6 +688,9 @@ main .form-section .form .ability input:checked + span {
   color: #00aaa7;
   font-weight: 700;
 }
+main .form-section .form .ability input:focus + span {
+  border: 0.1rem solid #000;
+}
 main .form-section .form .ability span {
   padding: 1rem 6rem;
   display: flex;
@@ -705,14 +715,14 @@ main .form-section .form .field {
 }
 main .form-section .form .field input {
   position: relative;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
   width: 2.4rem;
   height: 2.4rem;
   margin: 0;
   border: 0.1rem solid #333;
   border-radius: 50%;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 main .form-section .form .field input:checked {
   background: #02a39f url("../assets/images/icon/check-green.svg") no-repeat 0/cover;
@@ -723,8 +733,8 @@ main .form-section .form .field span {
   color: #333;
 }
 main .form-section .form .input-wrap input {
-  width: 48.1rem;
   padding: 1.5rem 2rem;
+  width: 48.1rem;
   border: 0.1rem solid #333333;
   font-size: 2.4rem;
   color: #333;
@@ -743,9 +753,11 @@ main .form-section .form .textarea-wrap {
   position: relative;
 }
 main .form-section .form .textarea-wrap textarea {
+  padding: 1.2rem 15rem 1.2rem 2rem;
   width: 100%;
   height: 21.7rem;
-  padding: 1.2rem 2rem;
+  font-size: 2rem;
+  font-family: "Pretendard";
   border: 0.15rem solid #333333;
   resize: none;
   outline: 0;
