@@ -4,40 +4,40 @@
 .header {
   z-index: 999999;
   position: absolute;
-  top: 110px;
+  top: 11rem;
   width: 100%;
 
   .inner {
     display: flex;
     justify-content: space-between;
   }
-  &__logo {
-    width: per(68);
+  .logo {
+    width: 6.8rem;
   }
-  &__actions {
+  .actions {
     display: flex;
     align-items: center;
-    gap: 24px;
+    gap: 2.4rem;
   }
-  &__login {
-    padding: 10px 20px;
+  .login {
+    padding: 1rem 2rem;
     font-family: "NanumSquareRound";
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: 800;
-    border: 2px solid $color-black;
-    border-radius: 100px;
+    border: 0.2rem solid $color-black;
+    border-radius: 10rem;
     white-space: nowrap;
   }
-  &__miraen-logo {
-    width: per(96, 207);
+  .miraen-logo {
+    width: 9.6rem;
   }
 
-  @media screen and (max-width: 1240px) {
-  }
-  @media screen and (max-width: 790px) {
-    &__login {
-      font-size: 12px;
-      padding: 6px 12px;
-    }
-  }
+  // @media screen and (max-width: 1240px) {
+  // }
+  // @media screen and (max-width: 790px) {
+  //   &__login {
+  //     font-size: 12px;
+  //     padding: 6px 12px;
+  //   }
+  // }
 }

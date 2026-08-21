@@ -6,10 +6,11 @@
 @use "./layout/header";
 @use "./layout/footer";
 
+// --------- top-banner start
 .top-banner {
   width: 100%;
   .link {
-    padding: 14px 0;
+    padding: 1.4rem 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,28 +19,26 @@
   }
   .badge {
     position: relative;
-    width: per(132);
-    max-width: 132px;
+    width: 13.2rem;
     .btn {
       width: 100%;
     }
     .icon {
       position: absolute;
-      top: percent-y(-17, 42);
-      left: percent-x(-25, 132);
-      width: per(71, 132);
-      max-width: 71px;
+      top: -1.7rem;
+      left: -2.5rem;
+      width: 7.1rem;
     }
   }
   .badge-text {
-    font-size: 24px;
+    font-size: 2.4rem;
     font-weight: 500;
     color: $color-pink;
   }
   .text {
-    margin-left: 20px;
+    margin-left: 2rem;
     font-family: "Jalnan", sans-serif;
-    font-size: 28px;
+    font-size: 2.8rem;
 
     .highlight {
       position: relative;
@@ -47,7 +46,7 @@
       z-index: 1;
       &__line {
         position: absolute;
-        bottom: -2px;
+        bottom: -0.2rem;
         left: 0;
         width: 100%;
         z-index: -1;
@@ -55,30 +54,11 @@
     }
   }
   .arrow {
-    margin-left: 17px;
-    width: per(43);
-    max-width: 43px;
-  }
-
-  @media screen and (max-width: 1240px) {
-    .text {
-      margin-left: 10px;
-      font-size: 16px;
-    }
-    .arrow {
-      margin-left: 10px;
-    }
-  }
-  @media screen and (max-width: 790px) {
-    .text {
-      margin-left: 6px;
-      font-size: 12px;
-    }
-    .arrow {
-      margin-left: 6px;
-    }
+    margin-left: 1.7rem;
+    width: 4.3rem;
   }
 }
+// --------- top-banner end
 
 // --------- bottom-banner start
 .bottom-banner {
@@ -209,37 +189,37 @@ main {
   .hero-section {
     position: relative;
     width: 100%;
+    aspect-ratio: 1920 / 922;
     background: url("../assets/images/image/hero-bg.jpg") no-repeat center /
       cover;
 
     .inner {
-      max-width: none;
-      aspect-ratio: 1920 / 922;
+      // aspect-ratio: 1920 / 922;
+      height: 100%;
     }
 
-    &__title {
+    .title {
       position: absolute;
-      top: percent-y(73, 922);
-      left: percent-x(590, 1920);
-      width: per(726, 1920);
+      top: 7.3rem;
+      left: 23rem;
+      width: 72.6rem;
     }
-    &__banner {
+    .banner {
       position: absolute;
-      top: percent-y(396, 922);
-      left: percent-x(473, 1920);
-      width: per(809, 1920);
+      top: 39.6rem;
+      left: 11.3rem;
+      width: 80.9rem;
     }
 
-    &__hero-paper {
+    .hero-paper {
       position: absolute;
       left: 50%;
-      top: percent-y(827, 922);
+      top: 82.7rem;
       transform: translateX(-50%);
-      max-width: 100%;
-      width: 1200px;
+      width: 100%;
     }
 
-    &__flower {
+    .flower {
       position: absolute;
       right: 29.1%;
       bottom: 50px;
@@ -252,7 +232,8 @@ main {
   }
 
   .form-section {
-    padding: 300px 0 128px 0;
+    padding: per(300, 2624) 0 per(128, 2624) 0;
+    // padding: 300px 0 128px 0;
     text-align: center;
     background-color: $color-green;
     &__title {
@@ -267,8 +248,9 @@ main {
 
     // form
     .form {
+      margin: 30px auto 0;
       padding: 80px 60px;
-      margin-top: 30px;
+      max-width: 1200px;
       text-align: left;
       background: $color-white;
       border: 1.5px solid #333333;

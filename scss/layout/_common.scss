@@ -2,11 +2,7 @@
   position: relative;
   margin: 0 auto;
   max-width: 1200px;
-  width: 100%;
-
-  @media screen and (max-width: 1240px) {
-    // max-width: calc(100% - 80px);
-  }
+  width: calc(100% - 72rem);
 }
 
 .bullet-list-wrap {

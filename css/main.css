@@ -208,6 +208,16 @@ video {
   max-width: 100%;
 }
 
+html,
+body {
+  font-size: 0.5208333333vw;
+}
+
+@media (min-width: 1920px) {
+  html {
+    font-size: 10px;
+  }
+}
 @font-face {
   font-family: "Jalnan";
   src: url("../assets/fonts/Jalnan2.woff2") format("woff2");
@@ -260,8 +270,9 @@ video {
   position: relative;
   margin: 0 auto;
   max-width: 1200px;
-  width: 100%;
+  width: calc(100% - 72rem);
 }
+
 .bullet-list-wrap.check .bullet-list {
   padding-left: 34px;
   display: flex;
@@ -288,38 +299,32 @@ video {
 .header {
   z-index: 999999;
   position: absolute;
-  top: 110px;
+  top: 11rem;
   width: 100%;
 }
 .header .inner {
   display: flex;
   justify-content: space-between;
 }
-.header__logo {
-  width: 5.6666666667%;
+.header .logo {
+  width: 6.8rem;
 }
-.header__actions {
+.header .actions {
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 2.4rem;
 }
-.header__login {
-  padding: 10px 20px;
+.header .login {
+  padding: 1rem 2rem;
   font-family: "NanumSquareRound";
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 800;
-  border: 2px solid #000;
-  border-radius: 100px;
+  border: 0.2rem solid #000;
+  border-radius: 10rem;
   white-space: nowrap;
 }
-.header__miraen-logo {
-  width: 46.3768115942%;
-}
-@media screen and (max-width: 790px) {
-  .header__login {
-    font-size: 12px;
-    padding: 6px 12px;
-  }
+.header .miraen-logo {
+  width: 9.6rem;
 }
 
 .footer {
@@ -339,7 +344,7 @@ video {
   width: 100%;
 }
 .top-banner .link {
-  padding: 14px 0;
+  padding: 1.4rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -348,28 +353,26 @@ video {
 }
 .top-banner .badge {
   position: relative;
-  width: 11%;
-  max-width: 132px;
+  width: 13.2rem;
 }
 .top-banner .badge .btn {
   width: 100%;
 }
 .top-banner .badge .icon {
   position: absolute;
-  top: -40.4761904762%;
-  left: -18.9393939394%;
-  width: 53.7878787879%;
-  max-width: 71px;
+  top: -1.7rem;
+  left: -2.5rem;
+  width: 7.1rem;
 }
 .top-banner .badge-text {
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 500;
   color: #ff8aab;
 }
 .top-banner .text {
-  margin-left: 20px;
+  margin-left: 2rem;
   font-family: "Jalnan", sans-serif;
-  font-size: 28px;
+  font-size: 2.8rem;
 }
 .top-banner .text .highlight {
   position: relative;
@@ -378,33 +381,14 @@ video {
 }
 .top-banner .text .highlight__line {
   position: absolute;
-  bottom: -2px;
+  bottom: -0.2rem;
   left: 0;
   width: 100%;
   z-index: -1;
 }
 .top-banner .arrow {
-  margin-left: 17px;
-  width: 3.5833333333%;
-  max-width: 43px;
-}
-@media screen and (max-width: 1240px) {
-  .top-banner .text {
-    margin-left: 10px;
-    font-size: 16px;
-  }
-  .top-banner .arrow {
-    margin-left: 10px;
-  }
-}
-@media screen and (max-width: 790px) {
-  .top-banner .text {
-    margin-left: 6px;
-    font-size: 12px;
-  }
-  .top-banner .arrow {
-    margin-left: 6px;
-  }
+  margin-left: 1.7rem;
+  width: 4.3rem;
 }
 
 .bottom-banner {
@@ -521,33 +505,32 @@ video {
 main .hero-section {
   position: relative;
   width: 100%;
+  aspect-ratio: 1920/922;
   background: url("../assets/images/image/hero-bg.jpg") no-repeat center/cover;
 }
 main .hero-section .inner {
-  max-width: none;
-  aspect-ratio: 1920/922;
+  height: 100%;
 }
-main .hero-section__title {
+main .hero-section .title {
   position: absolute;
-  top: 7.9175704989%;
-  left: 30.7291666667%;
-  width: 37.8125%;
+  top: 7.3rem;
+  left: 23rem;
+  width: 72.6rem;
 }
-main .hero-section__banner {
+main .hero-section .banner {
   position: absolute;
-  top: 42.9501084599%;
-  left: 24.6354166667%;
-  width: 42.1354166667%;
+  top: 39.6rem;
+  left: 11.3rem;
+  width: 80.9rem;
 }
-main .hero-section__hero-paper {
+main .hero-section .hero-paper {
   position: absolute;
   left: 50%;
-  top: 89.6963123644%;
+  top: 82.7rem;
   transform: translateX(-50%);
-  max-width: 100%;
-  width: 1200px;
+  width: 100%;
 }
-main .hero-section__flower {
+main .hero-section .flower {
   position: absolute;
   right: 29.1%;
   bottom: 50px;
@@ -558,7 +541,7 @@ main .hero-section__flower {
   width: 8.75%;
 }
 main .form-section {
-  padding: 300px 0 128px 0;
+  padding: 11.4329268293% 0 4.8780487805% 0;
   text-align: center;
   background-color: #b0eeaf;
 }
@@ -572,8 +555,9 @@ main .form-section__btn {
   margin: 50px auto 0;
 }
 main .form-section .form {
+  margin: 30px auto 0;
   padding: 80px 60px;
-  margin-top: 30px;
+  max-width: 1200px;
   text-align: left;
   background: #fff;
   border: 1.5px solid #333333;
