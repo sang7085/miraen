@@ -1,15 +1,14 @@
 @use "../abstract/variables" as *;
 
 .footer {
-  padding: 60px 0 80px;
+  padding: 6rem 0 8rem;
   background: $color-grey;
   .title {
-    width: 302px;
+    width: 30.2rem;
   }
   .text {
-    margin-top: 40px;
-    max-width: 962px;
-    width: 80.1vw;
+    margin-top: 4rem;
+    width: 96.3rem;
   }
 }
 
