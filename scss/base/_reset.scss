@@ -166,12 +166,12 @@ body {
 }
 
 // // 태블릿 (768px ~ 1023px)
-// @media (min-width: 768px) {
-//   html,
-//   body {
-//     font-size: calc(100vw * 10 / 1024);
-//   }
-// }
+@media (max-width: 768px) {
+  html,
+  body {
+    font-size: calc(100vw * 10 / 768);
+  }
+}
 
 // // 데스크톱 (1024px 이상)
 // @media (min-width: 1024px) {
