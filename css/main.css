@@ -218,12 +218,6 @@ body {
     font-size: 10px;
   }
 }
-@media (max-width: 768px) {
-  html,
-  body {
-    font-size: 1.3020833333vw;
-  }
-}
 @font-face {
   font-family: "Jalnan";
   src: url("../assets/fonts/Jalnan2.woff2") format("woff2");
@@ -275,8 +269,14 @@ body {
 .inner {
   position: relative;
   margin: 0 auto;
-  max-width: 1200px;
+  max-width: 120rem;
   width: calc(100% - 72rem);
+}
+@media (max-width: 768px) {
+  .inner {
+    padding: 0 2rem;
+    width: 100%;
+  }
 }
 
 .bullet-list-wrap.check .bullet-list {
@@ -539,7 +539,6 @@ main .hero-section .flower {
   position: absolute;
   right: 29.1%;
   bottom: 50px;
-  max-width: 168px;
   width: 8.7vw;
   top: 78.7418655098%;
   left: 54.2708333333%;
