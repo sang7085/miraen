@@ -102,6 +102,10 @@
   top: 330px;
   right: 91px;
 
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+
   .character {
     position: absolute;
     top: -58px;
@@ -175,17 +179,11 @@
       }
     }
   }
-
-  @media screen and (max-width: 1240px) {
-    display: block;
-  }
-  @media screen and (max-width: 790px) {
-    display: none;
-  }
 }
 // --------- quick-menu end
-
+// --------- main start
 main {
+  // --------- hero section start
   .hero-section {
     position: relative;
     width: 100%;
@@ -227,40 +225,47 @@ main {
       right: 35rem;
       bottom: 5rem;
       top: 72.6rem;
-      left: 104.2rem;
       width: 16.8rem;
     }
   }
+  // --------- hero section end
 
+  // --------- form section start
   .form-section {
-    padding: per(300, 2624) 0 per(128, 2624) 0;
-    // padding: 300px 0 128px 0;
+    padding: 29.8rem 0 12.8rem 0;
     text-align: center;
     background-color: $color-green;
-    &__title {
-      margin-top: 6px;
+    .bubble {
+      margin: 0 auto;
+      width: 26.3rem;
     }
-    &__sub-title {
-      margin-top: 10px;
+    .title {
+      margin: 0.6rem auto 0;
+      width: 111.6rem;
     }
-    &__btn {
-      margin: 50px auto 0;
+    .sub-title {
+      margin: 1rem auto 0;
+      width: 68.8rem;
+    }
+    .btn {
+      margin: 5rem auto 0;
+      width: 56.2rem;
     }
 
     // form
     .form {
-      margin: 30px auto 0;
-      padding: 80px 60px;
-      max-width: 1200px;
+      margin: 3rem auto 0;
+      padding: 8rem 6rem;
+      max-width: 120rem;
       text-align: left;
       background: $color-white;
-      border: 1.5px solid #333333;
+      border: 0.15rem solid #333333;
 
       .form-group {
         & + .form-group {
           position: relative;
-          padding-top: 30px;
-          margin-top: 30px;
+          padding-top: 3rem;
+          margin-top: 3rem;
 
           &::before {
             content: "";
@@ -268,7 +273,7 @@ main {
             top: 0;
             left: 0;
             width: 100%;
-            height: 3px;
+            height: 0.3rem;
             background: url("../assets/images/image/form-line.png") no-repeat
               center 0 / cover;
           }
@@ -279,7 +284,12 @@ main {
         &.desc {
           display: flex;
           align-items: center;
-          gap: 8px;
+          gap: 0.8rem;
+
+          @media screen and (max-width: 768px) {
+            flex-direction: column;
+            align-items: flex-start;
+          }
 
           .description {
             margin: 0;
@@ -287,26 +297,27 @@ main {
         }
 
         .description {
-          margin-top: 16px;
-          font-size: 20px;
+          flex-shrink: 0;
+          margin-top: 1.6rem;
+          font-size: 2rem;
         }
       }
 
       .title {
         font-family: "GmarketSans";
-        font-size: 32px;
+        font-size: 3.2rem;
         font-weight: 700;
         color: #333;
       }
 
       .form-list {
-        margin-top: 32px;
+        margin-top: 3.2rem;
       }
 
       .ability-list {
         display: grid;
         grid-template-columns: repeat(4, auto);
-        gap: 16px;
+        gap: 1.6rem;
         justify-self: start;
       }
 
@@ -315,12 +326,12 @@ main {
 
         input {
           position: absolute;
-          width: 1px;
-          height: 1px;
+          width: 0.1rem;
+          height: 0.1rem;
           opacity: 0;
 
           &:checked + span {
-            border: 1px solid #00aaa7;
+            border: 0.1rem solid #00aaa7;
             background: rgba($color: #02a39f, $alpha: 0.1);
             color: #00aaa7;
             font-weight: 700;
@@ -328,36 +339,37 @@ main {
         }
 
         span {
-          padding: 10px 60px;
+          padding: 1rem 6rem;
           display: flex;
           align-items: center;
           justify-content: center;
           font-weight: 400;
+          font-size: 1.6rem;
           color: #333;
-          border: 1px solid #666;
-          border-radius: 20px;
+          border: 0.1rem solid #666;
+          border-radius: 2rem;
         }
       }
 
       .field-list {
         display: flex;
         flex-wrap: wrap;
-        gap: 20px;
+        gap: 2rem;
       }
 
       .field {
         display: flex;
         align-items: center;
-        gap: 8px;
+        gap: 0.8rem;
         cursor: pointer;
 
         input {
           position: relative;
           appearance: none;
-          width: 24px;
-          height: 24px;
+          width: 2.4rem;
+          height: 2.4rem;
           margin: 0;
-          border: 1px solid #333;
+          border: 0.1rem solid #333;
           border-radius: 50%;
 
           &:checked {
@@ -368,23 +380,23 @@ main {
         }
 
         span {
-          font-size: 24px;
+          font-size: 2.4rem;
           color: #333;
         }
       }
 
       .input-wrap {
         input {
-          width: 481px;
-          padding: 15px 20px;
-          border: 1px solid #333333;
-          font-size: 24px;
+          width: 48.1rem;
+          padding: 1.5rem 2rem;
+          border: 0.1rem solid #333333;
+          font-size: 2.4rem;
           color: #333;
           &::placeholder {
             color: #c3c3c3;
           }
           &:focus {
-            border: 1.5px solid #00aaa7;
+            border: 0.15rem solid #00aaa7;
             outline: 0;
           }
         }
@@ -395,9 +407,9 @@ main {
 
         textarea {
           width: 100%;
-          height: 217px;
-          padding: 12px 20px;
-          border: 1.5px solid #333333;
+          height: 21.7rem;
+          padding: 1.2rem 2rem;
+          border: 0.15rem solid #333333;
           resize: none;
           outline: 0;
 
@@ -405,16 +417,16 @@ main {
             color: #c3c3c3;
           }
           &:focus {
-            border: 1.5px solid #00aaa7;
+            border: 0.15rem solid #00aaa7;
             outline: 0;
           }
         }
 
         .count {
           position: absolute;
-          right: 20px;
-          bottom: 12px;
-          font-size: 20px;
+          right: 2rem;
+          bottom: 1.2rem;
+          font-size: 2rem;
           font-weight: 300;
           color: #555;
         }
@@ -422,13 +434,14 @@ main {
 
       .blind {
         position: absolute;
-        width: 1px;
-        height: 1px;
+        width: 0.1rem;
+        height: 0.1rem;
         overflow: hidden;
         clip: rect(0 0 0 0);
       }
     }
   }
+  // --------- form section end
 
   .promo-section {
     padding: 77px 0 100px;
@@ -810,3 +823,4 @@ main {
     }
   }
 }
+// --------- main end
