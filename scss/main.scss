@@ -1,14 +1,14 @@
 @use "./base/reset";
 @use "./base/fonts";
 @use "./abstract/variables" as *;
-@use "./abstract/mixins";
+@use "./abstract/function" as *;
 @use "./layout/common";
 @use "./layout/header";
 @use "./layout/footer";
 
 .top-banner {
   width: 100%;
-  &__link {
+  .link {
     padding: 14px 0;
     display: flex;
     justify-content: center;
@@ -16,20 +16,24 @@
     background: $color-pink;
     color: $color-white;
   }
-  &__badge {
+  .badge {
     position: relative;
+    .btn {
+      width: vw-1200(132);
+      max-width: max-width(132);
+    }
   }
-  &__icon {
+  .icon {
     position: absolute;
     top: -17px;
     left: -25px;
   }
-  &__badge-text {
+  .badge-text {
     font-size: 24px;
     font-weight: 500;
     color: $color-pink;
   }
-  &__text {
+  .text {
     margin-left: 20px;
     font-family: "Jalnan", sans-serif;
     font-size: 28px;
@@ -47,8 +51,27 @@
       }
     }
   }
-  &__arrow {
+  .arrow {
     margin-left: 17px;
+  }
+
+  @media screen and (max-width: 1240px) {
+    .text {
+      margin-left: 10px;
+      font-size: 16px;
+    }
+    .arrow {
+      margin-left: 10px;
+    }
+  }
+  @media screen and (max-width: 790px) {
+    .text {
+      margin-left: 6px;
+      font-size: 12px;
+    }
+    .arrow {
+      margin-left: 6px;
+    }
   }
 }
 
@@ -187,16 +210,12 @@ main {
       position: relative;
       top: 73px;
       margin: 0 auto;
-      max-width: 726px;
-      width: 60.5vw;
+      width: vw-1200(726);
     }
     &__banner {
-      // margin-left: 111px;
       position: relative;
       left: 9.2%;
-      // bottom: 30px;
-      max-width: 809px;
-      width: 67.4vw;
+      width: vw-1200(809);
     }
 
     &__hero-paper {

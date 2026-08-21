@@ -330,7 +330,7 @@ video {
 .top-banner {
   width: 100%;
 }
-.top-banner__link {
+.top-banner .link {
   padding: 14px 0;
   display: flex;
   justify-content: center;
@@ -338,38 +338,60 @@ video {
   background: #ff8aab;
   color: #fff;
 }
-.top-banner__badge {
+.top-banner .badge {
   position: relative;
 }
-.top-banner__icon {
+.top-banner .badge .btn {
+  width: 11vw;
+  max-width: 132px;
+}
+.top-banner .icon {
   position: absolute;
   top: -17px;
   left: -25px;
 }
-.top-banner__badge-text {
+.top-banner .badge-text {
   font-size: 24px;
   font-weight: 500;
   color: #ff8aab;
 }
-.top-banner__text {
+.top-banner .text {
   margin-left: 20px;
   font-family: "Jalnan", sans-serif;
   font-size: 28px;
 }
-.top-banner__text .highlight {
+.top-banner .text .highlight {
   position: relative;
   color: #fffe8d;
   z-index: 1;
 }
-.top-banner__text .highlight__line {
+.top-banner .text .highlight__line {
   position: absolute;
   bottom: -2px;
   left: 0;
   width: 100%;
   z-index: -1;
 }
-.top-banner__arrow {
+.top-banner .arrow {
   margin-left: 17px;
+}
+@media screen and (max-width: 1240px) {
+  .top-banner .text {
+    margin-left: 10px;
+    font-size: 16px;
+  }
+  .top-banner .arrow {
+    margin-left: 10px;
+  }
+}
+@media screen and (max-width: 790px) {
+  .top-banner .text {
+    margin-left: 6px;
+    font-size: 12px;
+  }
+  .top-banner .arrow {
+    margin-left: 6px;
+  }
 }
 
 .bottom-banner {
@@ -492,14 +514,12 @@ main .hero-section__title {
   position: relative;
   top: 73px;
   margin: 0 auto;
-  max-width: 726px;
   width: 60.5vw;
 }
 main .hero-section__banner {
   position: relative;
   left: 9.2%;
-  max-width: 809px;
-  width: 67.4vw;
+  width: 67.4166666667vw;
 }
 main .hero-section__hero-paper {
   position: absolute;
