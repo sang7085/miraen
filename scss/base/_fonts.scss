@@ -9,20 +9,6 @@
 // Pretendard
 @font-face {
   font-family: "Pretendard";
-  src: url("../assets/fonts/Pretendard-Thin.woff2") format("woff2");
-  font-weight: 100;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Pretendard";
-  src: url("../assets/fonts/Pretendard-ExtraLight.woff2") format("woff2");
-  font-weight: 200;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Pretendard";
   src: url("../assets/fonts/Pretendard-Light.woff2") format("woff2");
   font-weight: 300;
   font-display: swap;
@@ -44,54 +30,12 @@
 
 @font-face {
   font-family: "Pretendard";
-  src: url("../assets/fonts/Pretendard-SemiBold.woff2") format("woff2");
-  font-weight: 600;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Pretendard";
   src: url("../assets/fonts/Pretendard-Bold.woff2") format("woff2");
   font-weight: 700;
   font-display: swap;
 }
 
-@font-face {
-  font-family: "Pretendard";
-  src: url("../assets/fonts/Pretendard-ExtraBold.woff2") format("woff2");
-  font-weight: 800;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Pretendard";
-  src: url("../assets/fonts/Pretendard-Black.woff2") format("woff2");
-  font-weight: 900;
-  font-display: swap;
-}
-
 // 나눔스퀘어라운드
-@font-face {
-  font-family: "NanumSquareRound";
-  src: url("../assets/fonts/NanumSquareRoundL.woff2") format("woff2");
-  font-weight: 300;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "NanumSquareRound";
-  src: url("../assets/fonts/NanumSquareRoundR.woff2") format("woff2");
-  font-weight: 400;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "NanumSquareRound";
-  src: url("../assets/fonts/NanumSquareRoundB.woff2") format("woff2");
-  font-weight: 700;
-  font-display: swap;
-}
-
 @font-face {
   font-family: "NanumSquareRound";
   src: url("../assets/fonts/NanumSquareRoundEB.woff2") format("woff2");
@@ -104,5 +48,13 @@
   font-family: "RixInooAriDuri";
   src: url("../assets/fonts/RixInooAriDuri-Regular.woff2") format("woff2");
   font-weight: 400;
+  font-display: swap;
+}
+
+// G마켓 산스
+@font-face {
+  font-family: "GmarketSans";
+  src: url("../assets/fonts/GmarketSansTTFBold.woff2") format("woff2");
+  font-weight: 700;
   font-display: swap;
 }

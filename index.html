@@ -2,16 +2,25 @@
 <html lang="ko">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=\, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>미래엔 사전과제</title>
     <link rel="stylesheet" href="./css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script defer src="./js/main.js"></script>
   </head>
   <body>
     <aside class="top-banner">
       <a href="#" class="top-banner__link">
         <div class="top-banner__badge">
-          <img class="top-banner__icon" src="./assets/images/top-banner-siren.svg" />
-          <span class="top-banner__badge-text">선착순</span>
+          <img
+            class="top-banner__icon"
+            src="./assets/images/icon/top-banner-siren.svg"
+          />
+          <img src="./assets/images/image/top-banner-btn.png" alt="" />
         </div>
         <p class="top-banner__text">
           초코 회원이라면
@@ -19,44 +28,46 @@
             누구나 무료!
             <img
               class="highlight__line"
-              src="./assets/images/top-banner-line.svg"
+              src="./assets/images/icon/top-banner-line.svg"
               alt=""
             />
           </strong>
           지금 신청
         </p>
         <div class="top-banner__arrow">
-          <img src="../assets/images/banner-arrow.svg" alt="" />
+          <img src="../assets/images/icon/banner-arrow.svg" alt="" />
         </div>
       </a>
     </aside>
+
+    <!-- quickMenu start -->
     <aside class="quick-menu">
-      <div class="quick-menu__character">
-        <img src="./assets/images/quick-menu-character.png" alt="" />
+      <div class="character">
+        <img src="./assets/images/image/quick-menu-character.png" alt="" />
       </div>
-      <ul class="quick-menu__wrap">
-        <li class="quick-menu__list">
-          <a href="/"><span>계기교육 안내</span></a>
+      <ul class="wrap">
+        <li class="quick-list">
+          <a href="#form-section"><span>계기교육 안내</span></a>
         </li>
-        <li class="quick-menu__list">
-          <a href="/"><span>초코타임미리보기</span></a>
+        <li class="quick-list">
+          <a href="#promo-section"><span>초코타임미리보기</span></a>
         </li>
-        <li class="quick-menu__list icon">
-          <a href="/">
+        <li class="quick-list icon">
+          <a href="#tab-section">
             <span>커리큘럼과목</span>
-            <img src="./assets/images/quick-icon01.svg" alt="">
+            <img src="./assets/images/icon/quick-icon01.svg" alt="" />
           </a>
         </li>
-        <li class="quick-menu__list icon">
-          <a href="/">
+        <li class="quick-list icon">
+          <a href="#tab-section">
             <span>신청하기</span>
-            <img src="./assets/images/quick-icon02.svg" alt="">
-        </a>
+            <img src="./assets/images/icon/quick-icon02.svg" alt="" />
+          </a>
         </li>
-        <li class="quick-menu__list top_btn">
-          <a href="/">
+        <li class="quick-list top-btn">
+          <a href="#lecture-info-section">
             <span>TOP</span>
-            <img src="./assets/images/quick-arrow.svg" alt="">
+            <img src="./assets/images/icon/quick-arrow.svg" alt="" />
           </a>
         </li>
       </ul>
@@ -64,44 +75,763 @@
     <header class="header">
       <div class="inner">
         <a href="/" class="header__logo">
-          <img src="./assets/images/choco-logo.svg" alt="초코 로고" />
+          <img src="./assets/images/icon/choco-logo.svg" alt="초코 로고" />
         </a>
         <div class="header__actions">
           <button class="header__login">로그인</button>
           <a href="/" class="header__miraen-logo">
-            <img src="./assets/images/miraen-logo.svg" alt="미래엔 로고" />
+            <img src="./assets/images/icon/miraen-logo.svg" alt="미래엔 로고" />
           </a>
         </div>
       </div>
     </header>
     <main id="container">
       <section id="hero-section" class="hero-section">
-        <div class="hero-section__title">
-          <img src="./assets/images/hero-title.png" alt="히어로 타이틀" />
-        </div>
-        <div class="hero-section__banner">
-          <img src="./assets/images/hero-banner.png" alt="" />
+        <div class="inner">
+          <div class="hero-section__title">
+            <img
+              src="./assets/images/image/hero-title.png"
+              alt="히어로 타이틀"
+            />
+          </div>
+          <div class="hero-section__banner">
+            <img src="./assets/images/image/hero-banner.png" alt="" />
+          </div>
+          <div class="hero-section__hero-paper">
+            <img src="/assets/images/image/hero-paper.png" alt="" />
+          </div>
+          <div class="hero-section__flower">
+            <img src="./assets/images/image/hero-flower-front.png" alt="" />
+          </div>
         </div>
       </section>
-      <section id="form-section" class="form-section"></section>
-      <section id="promo-section" class="promo-section"></section>
-      <section id="tab-section" class="tab-section"></section>
-      <section id="tab-section" class="tab-section"></section>
+      <section id="form-section" class="form-section">
+        <div class="inner">
+          <div class="form-section__bubble">
+            <img src="./assets/images/image/form-bubble.png" alt="" />
+          </div>
+          <div class="form-section__title">
+            <img src="./assets/images/image/form-title.png" alt="" />
+          </div>
+          <div class="form-section__sub-title">
+            <img src="./assets/images/image/form-sub-title.png" alt="" />
+          </div>
+          <div class="form-section__paper">
+            <img src="./assets/images/image/form-paper.png" alt="" />
+          </div>
+
+          <form class="form">
+            <div class="form-group">
+              <div class="title-wrap">
+                <h3 class="title">
+                  주로 사용하는 퍼블리싱 기술/환경을 선택해 주세요.
+                  <span>(복수 선택 가능)</span>
+                </h3>
+              </div>
+
+              <div class="form-list ability-list">
+                <label class="ability">
+                  <input type="checkbox" name="ability" value="html5" checked />
+                  <span>HTML5</span>
+                </label>
+
+                <label class="ability">
+                  <input type="checkbox" name="ability" value="css3" checked />
+                  <span>CSS3</span>
+                </label>
+
+                <label class="ability">
+                  <input
+                    type="checkbox"
+                    name="ability"
+                    value="javascript"
+                    checked
+                  />
+                  <span>JavaScript</span>
+                </label>
+
+                <label class="ability">
+                  <input
+                    type="checkbox"
+                    name="ability"
+                    value="jquery"
+                    checked
+                  />
+                  <span>jQuery</span>
+                </label>
+
+                <label class="ability">
+                  <input type="checkbox" name="ability" value="react" checked />
+                  <span>React</span>
+                </label>
+
+                <label class="ability">
+                  <input type="checkbox" name="ability" value="vue" />
+                  <span>Vue</span>
+                </label>
+
+                <label class="ability">
+                  <input type="checkbox" name="ability" value="figma" checked />
+                  <span>Figma</span>
+                </label>
+
+                <label class="ability">
+                  <input
+                    type="checkbox"
+                    name="ability"
+                    value="photoshop"
+                    checked
+                  />
+                  <span>Photoshop</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="title-wrap">
+                <h3 class="title">
+                  가장 자신 있는 퍼블리싱 영역은 무엇인가요?
+                </h3>
+              </div>
+
+              <div class="form-list field-list">
+                <label class="field">
+                  <input type="radio" name="area" value="responsive" />
+                  <span>반응형 웹</span>
+                </label>
+
+                <label class="field">
+                  <input type="radio" name="area" value="promotion" />
+                  <span>프로모션/이벤트 페이지</span>
+                </label>
+
+                <label class="field">
+                  <input type="radio" name="area" value="ui" checked />
+                  <span>UI 컴포넌트/디자인 시스템</span>
+                </label>
+
+                <label class="field">
+                  <input type="radio" name="area" value="animation" />
+                  <span>CSS 애니메이션/인터랙션</span>
+                </label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="title-wrap desc">
+                <h3 class="title">
+                  포트폴리오 또는 대표 작업물 URL을 작성해 주세요.
+                </h3>
+                <p class="description">
+                  퍼블리싱한 웹사이트 주소를 작성해주세요.
+                </p>
+              </div>
+
+              <div class="form-list input-wrap">
+                <label for="portfolio" class="blind">포트폴리오 URL</label>
+                <input
+                  id="portfolio"
+                  type="url"
+                  name="portfolio"
+                  placeholder="Ex. 중학 국어 2-1(신유식)"
+                  value="https://hyun-three.vercel.app"
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <div class="title-wrap">
+                <h3 class="title">
+                  이번 퍼블리싱 과제를 진행하면서 가장 신경 쓴 부분이나 어필하고
+                  싶은 점을 적어주세요.
+                </h3>
+                <p class="description">
+                  마크업 구조, 반응형 처리 방식, CSS 구조화 등 자유롭게 작성해
+                  주세요.
+                </p>
+              </div>
+
+              <div class="form-list textarea-wrap">
+                <label for="comment" class="blind">과제 내용</label>
+
+                <textarea
+                  id="comment"
+                  name="comment"
+                  maxlength="2000"
+                ></textarea>
+
+                <span class="count">0/2,000</span>
+              </div>
+            </div>
+          </form>
+
+          <button class="form-section__btn">
+            <img src="./assets/images/image/form-btn.png" alt="" />
+          </button>
+        </div>
+      </section>
+      <section id="promo-section" class="promo-section">
+        <div class="inner">
+          <div class="promo-section__title">
+            <img src="./assets/images/image/promo-title.png" alt="" />
+          </div>
+          <div class="promo-section__sub-title">
+            <img src="./assets/images/image/promo-sub-title.png" alt="" />
+          </div>
+          <div class="promo-section__content">
+            <div class="promo-section__paper">
+              <div class="promo-section__video">
+                <video
+                  src="./assets/video/promo-video.mp4"
+                  poster="./assets/images/image/video-thumbnail.jpg"
+                ></video>
+                <button class="promo-section__btn-play">
+                  <img src="./assets/images/icon/btn-play.svg" alt="" />
+                </button>
+              </div>
+              <ul class="bullet-list-wrap check">
+                <li class="bullet-list">
+                  <img src="./assets/images/image/bullet-list1.png" alt="" />
+                </li>
+                <li class="bullet-list">
+                  <img src="./assets/images/image/bullet-list2.png" alt="" />
+                </li>
+                <li class="bullet-list">
+                  <img src="./assets/images/image/bullet-list3.png" alt="" />
+                </li>
+              </ul>
+              <div class="promo-section__clip">
+                <img src="./assets/images/icon/clip.svg" alt="" />
+              </div>
+              <div class="promo-section__charactor">
+                <img src="./assets/images/image/paper-charactor.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="tab-section" class="tab-section">
+        <div class="tab-section__logo">
+          <img src="./assets/images/icon/choco-pop-logo.svg" alt="" />
+        </div>
+        <div class="tab-section__title">
+          <img src="./assets/images/image/tab-title.png" alt="" />
+        </div>
+        <div class="tab-section__content">
+          <div class="tab-section__tab-menu-rope">
+            <img src="./assets/images/image/tab-menu-rope.png" alt="" />
+          </div>
+          <div class="tab-section__swiper-area">
+            <div class="inner">
+              <ul class="tab-section__tab-btn-wrap">
+                <li class="tab-item">
+                  <button class="tab-btn"></button>
+                </li>
+                <li class="tab-item">
+                  <button class="tab-btn"></button>
+                </li>
+                <li class="tab-item">
+                  <button class="tab-btn"></button>
+                </li>
+                <li class="tab-item">
+                  <button class="tab-btn"></button>
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-section__swiper-area">
+              <div class="inner">
+                <div class="swiper tab-section__panel-con">
+                  <div class="swiper-wrapper">
+                    <!-- slide1 -->
+                    <div class="swiper-slide">
+                      <div class="top-area">
+                        <h3 class="slide-title">
+                          <img
+                            src="./assets/images/image/slide-title-top1.png"
+                            alt=""
+                          />
+                        </h3>
+                        <div class="card-list-wrap arrow">
+                          <div class="card-list">
+                            <div class="card-thum">
+                              <img
+                                src="./assets/images/image/card-top-img1-1.png"
+                                alt=""
+                              />
+                            </div>
+                            <h4 class="card-title">
+                              <img
+                                src="./assets/images/image/card-top-title1-1.png"
+                                alt=""
+                              />
+                            </h4>
+                            <p class="card-text">
+                              <img
+                                src="./assets/images/image/card-top-text1-1.png"
+                                alt=""
+                              />
+                            </p>
+                          </div>
+                          <div class="card-list">
+                            <div class="card-thum">
+                              <img
+                                src="./assets/images/image/card-top-img1-2.png"
+                                alt=""
+                              />
+                            </div>
+                            <h4 class="card-title">
+                              <img
+                                src="./assets/images/image/card-top-title1-2.png"
+                                alt=""
+                              />
+                            </h4>
+                            <p class="card-text">
+                              <img
+                                src="./assets/images/image/card-top-text1-2.png"
+                                alt=""
+                              />
+                            </p>
+                          </div>
+                          <div class="card-list">
+                            <div class="card-thum">
+                              <img
+                                src="./assets/images/image/card-top-img1-3.png"
+                                alt=""
+                              />
+                            </div>
+                            <h4 class="card-title">
+                              <img
+                                src="./assets/images/image/card-top-title1-3.png"
+                                alt=""
+                              />
+                            </h4>
+                            <p class="card-text">
+                              <img
+                                src="./assets/images/image/card-top-text1-3.png"
+                                alt=""
+                              />
+                              <span class="important">
+                                <img
+                                  src="./assets/images/image/card-top-text1-3-important.png"
+                                  alt=""
+                                />
+                              </span>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="bottom-area">
+                        <h3 class="slide-title">
+                          <img
+                            src="./assets/images/image/slide-title-bottom1.png"
+                            alt=""
+                          />
+                        </h3>
+                        <div class="card-list-wrap shared-text">
+                          <div class="card-list">
+                            <div class="card-thum">
+                              <img
+                                src="./assets/images/image/card-bottom-img1-1.png"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                          <div class="card-list">
+                            <div class="card-thum">
+                              <img
+                                src="./assets/images/image/card-bottom-img1-2.png"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                          <p class="card-text line-3">
+                            <img
+                              src="./assets/images/image/card-shared-text1.png"
+                              alt=""
+                            />
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- slide2 -->
+                    <div class="swiper-slide">
+                      <div class="top-area">
+                        <h3 class="slide-title">
+                          <img
+                            src="./assets/images/image/slide-title-top2.png"
+                            alt=""
+                          />
+                        </h3>
+                        <div class="card-list-wrap shared-text">
+                          <div class="card-list">
+                            <div class="card-thum">
+                              <img
+                                src="./assets/images/image/card-top-img2-1.png"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                          <div class="card-list">
+                            <div class="card-thum">
+                              <img
+                                src="./assets/images/image/card-top-img2-2.png"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                          <div class="card-list">
+                            <div class="card-thum">
+                              <img
+                                src="./assets/images/image/card-top-img2-3.png"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                          <p class="card-text">
+                            <img
+                              src="./assets/images/image/card-shared-text2.png"
+                              alt=""
+                            />
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="bottom-area">
+                        <h3 class="slide-title">
+                          <img
+                            src="./assets/images/image/slide-title-bottom2.png"
+                            alt=""
+                          />
+                        </h3>
+                        <div class="card-list-wrap double">
+                          <div class="card-list">
+                            <div class="card-thum">
+                              <img
+                                src="./assets/images/image/card-bottom-img2-1.png"
+                                alt=""
+                              />
+                            </div>
+                            <h4 class="card-title">
+                              <img
+                                src="./assets/images/image/card-bottom-title2-1.png"
+                                alt=""
+                              />
+                            </h4>
+                            <p class="card-text line-3">
+                              <img
+                                src="./assets/images/image/card-bottom-text2-1.png"
+                                alt=""
+                              />
+                            </p>
+                          </div>
+                          <div class="card-list">
+                            <div class="card-thum">
+                              <img
+                                src="./assets/images/image/card-bottom-img2-2.png"
+                                alt=""
+                              />
+                            </div>
+                            <h4 class="card-title">
+                              <img
+                                src="./assets/images/image/card-bottom-title2-2.png"
+                                alt=""
+                              />
+                            </h4>
+                            <p class="card-text line-3">
+                              <img
+                                src="./assets/images/image/card-bottom-text2-2.png"
+                                alt=""
+                              />
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- slide3 -->
+                    <div class="swiper-slide">
+                      <div class="top-area">
+                        <h3 class="slide-title">
+                          <img
+                            src="./assets/images/image/slide-title-top3.png"
+                            alt=""
+                          />
+                        </h3>
+                        <div class="card-list-wrap shared-text">
+                          <div class="card-list">
+                            <div class="card-thum">
+                              <img
+                                src="./assets/images/image/card-top-img3-1.png"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                          <div class="card-list">
+                            <div class="card-thum">
+                              <img
+                                src="./assets/images/image/card-top-img3-2.png"
+                                alt=""
+                              />
+                            </div>
+                          </div>
+                          <p class="card-text line-3">
+                            <img
+                              src="./assets/images/image/card-shared-text3.png"
+                              alt=""
+                            />
+                          </p>
+                        </div>
+                      </div>
+
+                      <div class="bottom-area">
+                        <h3 class="slide-title">
+                          <img
+                            src="./assets/images/image/slide-title-bottom3.png"
+                            alt=""
+                          />
+                        </h3>
+                        <div class="card-list-wrap double">
+                          <div class="card-list">
+                            <div class="card-thum">
+                              <img
+                                src="./assets/images/image/card-bottom-img3-1.png"
+                                alt=""
+                              />
+                            </div>
+                            <h4 class="card-title">
+                              <img
+                                src="./assets/images/image/card-bottom-title3-1.png"
+                                alt=""
+                              />
+                            </h4>
+                            <p class="card-text line-3">
+                              <img
+                                src="./assets/images/image/card-bottom-text3-1.png"
+                                alt=""
+                              />
+                            </p>
+                          </div>
+                          <div class="card-list">
+                            <div class="card-thum">
+                              <img
+                                src="./assets/images/image/card-bottom-img3-2.png"
+                                alt=""
+                              />
+                            </div>
+                            <h4 class="card-title">
+                              <img
+                                src="./assets/images/image/card-bottom-title3-2.png"
+                                alt=""
+                              />
+                            </h4>
+                            <p class="card-text">
+                              <img
+                                src="./assets/images/image/card-bottom-text3-2.png"
+                                alt=""
+                              />
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- slide4 -->
+                    <div class="swiper-slide">
+                      <div class="top-area">
+                        <h3 class="slide-title">
+                          <img
+                            src="./assets/images/image/slide-title-top4.png"
+                            alt=""
+                          />
+                        </h3>
+                        <div class="card-list-wrap">
+                          <div class="card-list">
+                            <div class="card-thum">
+                              <img
+                                src="./assets/images/image/card-top-img4-1.png"
+                                alt=""
+                              />
+                            </div>
+                            <h4 class="card-title">
+                              <img
+                                src="./assets/images/image/card-top-title4-1.png"
+                                alt=""
+                              />
+                            </h4>
+                            <p class="card-text">
+                              <img
+                                src="./assets/images/image/card-top-text4-1.png"
+                                alt=""
+                              />
+                            </p>
+                          </div>
+                          <div class="card-list">
+                            <div class="card-thum">
+                              <img
+                                src="./assets/images/image/card-top-img4-2.png"
+                                alt=""
+                              />
+                            </div>
+                            <h4 class="card-title">
+                              <img
+                                src="./assets/images/image/card-top-title4-2.png"
+                                alt=""
+                              />
+                            </h4>
+                            <p class="card-text">
+                              <img
+                                src="./assets/images/image/card-top-text4-2.png"
+                                alt=""
+                              />
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="bottom-area">
+                        <h3 class="slide-title">
+                          <img
+                            src="./assets/images/image/slide-title-bottom4.png"
+                            alt=""
+                          />
+                        </h3>
+                        <div class="card-list-wrap">
+                          <div class="card-list">
+                            <div class="card-thum">
+                              <img
+                                src="./assets/images/image/card-bottom-img4-1.png"
+                                alt=""
+                              />
+                            </div>
+                            <h4 class="card-title">
+                              <img
+                                src="./assets/images/image/card-bottom-title4-1.png"
+                                alt=""
+                              />
+                            </h4>
+                            <p class="card-text line-3">
+                              <img
+                                src="./assets/images/image/card-bottom-text4-1.png"
+                                alt=""
+                              />
+                            </p>
+                          </div>
+                          <div class="card-list">
+                            <div class="card-thum">
+                              <img
+                                src="./assets/images/image/card-bottom-img4-2.png"
+                                alt=""
+                              />
+                            </div>
+                            <h4 class="card-title">
+                              <img
+                                src="./assets/images/image/card-bottom-title4-2.png"
+                                alt=""
+                              />
+                            </h4>
+                            <p class="card-text">
+                              <img
+                                src="./assets/images/image/card-bottom-text4-2.png"
+                                alt=""
+                              />
+                            </p>
+                          </div>
+                          <div class="card-list">
+                            <div class="card-thum">
+                              <img
+                                src="./assets/images/image/card-bottom-img4-3.png"
+                                alt=""
+                              />
+                            </div>
+                            <h4 class="card-title">
+                              <img
+                                src="./assets/images/image/card-bottom-title4-3.png"
+                                alt=""
+                              />
+                            </h4>
+                            <p class="card-text">
+                              <img
+                                src="./assets/images/image/card-bottom-text4-3.png"
+                                alt=""
+                              />
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slide-title-wrap">
+                <div class="slide-banner-title">
+                  <img src="./assets/images/image/slide-banner1.png" alt="" />
+                </div>
+                <div class="slide-banner-title">
+                  <img src="./assets/images/image/slide-banner2.png" alt="" />
+                </div>
+                <div class="slide-banner-title">
+                  <img src="./assets/images/image/slide-banner3.png" alt="" />
+                </div>
+                <div class="slide-banner-title">
+                  <img src="./assets/images/image/slide-banner4.png" alt="" />
+                </div>
+              </div>
+              <div class="swiper-arrow-wrap">
+                <button type="button" class="swiper-arrow prev">
+                  <img src="./assets/images/icon/swiper-arrow.svg" alt="" />
+                </button>
+                <button type="button" class="swiper-arrow next">
+                  <img src="./assets/images/icon/swiper-arrow.svg" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div id="lecture-info-section" class="lecture-info-section">
+        <div class="inner">
+          <div class="tv-img">
+            <img src="./assets/images/image/lecture-tv-img.png" alt="" />
+          </div>
+          <h4 class="sub-title">
+            <img src="./assets/images/image/lecture-sub-title.png" alt="" />
+          </h4>
+          <h3 class="title">
+            <img src="./assets/images/image/lecture-title.png" alt="" />
+          </h3>
+          <div class="banner">
+            <img src="./assets/images/image/lecture-banner.png" alt="" />
+          </div>
+          <button class="lecture-btn">
+            <img src="./assets/images/image/lecture-btn.png" alt="" />
+          </button>
+        </div>
+      </div>
     </main>
+
+    <footer class="footer">
+      <div class="inner">
+        <h3 class="title">
+          <img src="./assets/images/image/footer-title.png" alt="" />
+        </h3>
+        <p class="text">
+          <img src="./assets/images/image/footer-text.png" alt="" />
+        </p>
+      </div>
+    </footer>
+
     <aside class="bottom-banner">
       <div class="inner">
         <div class="bottom-banner__badge">
-          <!-- <p class="bottom-banner__badge-text">선착순</p> -->
-          <div class="bottom-banner__img">
-            <img src="" alt="">
-          </div>
+          <img src="/assets/images/image/bottom-banner-badge.png" alt="" />
         </div>
         <p class="bottom-banner__text">
-          <strong class="bottom-banner__highlight">빠르게, 초코타임</strong> 신청하러 가자
+          <img src="/assets/images/image/bottom-banner-text.png" alt="" />
         </p>
         <button class="bottom-banner__btn">
-          <p class="bottom-banner__btn-t ext">GO GO!</p>
-          <img src="../assets/images/banner-arrow.svg" alt="" />
+          <img src="/assets/images/image/bottom-banner-btn.png" alt="" />
         </button>
       </div>
     </aside>

@@ -1,6 +1,7 @@
 @use "../abstract/variables" as *;
 
 .header {
+  z-index: 999999;
   position: absolute;
   top: 110px;
   width: 100%;
@@ -9,7 +10,6 @@
     display: flex;
     justify-content: space-between;
   }
-
   &__logo {
   }
   &__actions {

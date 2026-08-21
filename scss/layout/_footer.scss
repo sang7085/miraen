@@ -1,0 +1,17 @@
+@use "../abstract/variables" as *;
+
+.footer {
+  padding: 60px 0 80px;
+  background: $color-grey;
+  .title {
+    width: 302px;
+  }
+  .text {
+    margin-top: 40px;
+    max-width: 962px;
+    width: 50.1vw;
+  }
+}
+
+// screen and (max-width: 1240px)
+// screen and (max-width: 790px)
