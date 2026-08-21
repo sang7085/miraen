@@ -167,6 +167,13 @@
       }
     }
   }
+
+  @media screen and (max-width: 1240px) {
+    display: block;
+  }
+  @media screen and (max-width: 790px) {
+    display: none;
+  }
 }
 // --------- quick-menu end
 
@@ -742,6 +749,16 @@ main {
       left: 50%;
       transform: translateX(-50%);
       width: 100%;
+    }
+
+    @media screen and (max-width: 1240px) {
+    }
+    @media screen and (max-width: 790px) {
+      .tab-item {
+        .tab-btn {
+          width: 15.5vw;
+        }
+      }
     }
   }
 

@@ -324,7 +324,7 @@ video {
 .footer .text {
   margin-top: 40px;
   max-width: 962px;
-  width: 50.1vw;
+  width: 80.1vw;
 }
 
 .top-banner {
@@ -471,6 +471,16 @@ video {
 .quick-menu .quick-list.top-btn a {
   padding: 10px 0;
   color: #fff;
+}
+@media screen and (max-width: 1240px) {
+  .quick-menu {
+    display: block;
+  }
+}
+@media screen and (max-width: 790px) {
+  .quick-menu {
+    display: none;
+  }
 }
 
 main .hero-section {
@@ -947,6 +957,11 @@ main .tab-section__slide-banner {
   left: 50%;
   transform: translateX(-50%);
   width: 100%;
+}
+@media screen and (max-width: 790px) {
+  main .tab-section .tab-item .tab-btn {
+    width: 15.5vw;
+  }
 }
 main .lecture-info-section {
   padding: 120px 0 196px 0;
